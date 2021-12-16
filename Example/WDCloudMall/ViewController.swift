@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WDCloudMall
 
 class ViewController: UIViewController {
 

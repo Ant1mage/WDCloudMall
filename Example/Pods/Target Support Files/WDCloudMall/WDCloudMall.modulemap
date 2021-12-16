@@ -1,0 +1,6 @@
+framework module WDCloudMall {
+  umbrella header "WDCloudMall-umbrella.h"
+
+  export *
+  module * { export * }
+}

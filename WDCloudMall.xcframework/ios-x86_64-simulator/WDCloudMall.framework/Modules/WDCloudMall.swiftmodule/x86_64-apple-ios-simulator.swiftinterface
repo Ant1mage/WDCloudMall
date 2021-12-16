@@ -1,0 +1,150 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WDCloudMall
+import CoreGraphics
+import CryptoSwift
+import Foundation
+import Swift
+import UIKit.UIGeometry
+import UIKit
+@_exported import WDCloudMall
+import WebKit
+@objc public class WDCMUserModel : ObjectiveC.NSObject {
+  @objc public var userId: Swift.String
+  @objc public var gender: Swift.Int
+  @objc public var nickName: Swift.String?
+  @objc public var birthday: Swift.String?
+  @objc public var extra: Swift.String?
+  @objc public var wxAccessToken: Swift.String?
+  @objc public var avatar: Swift.String?
+  @objc public var deviceId: Swift.String?
+  @objc public var deviceType: Swift.String?
+  @objc public var deviceName: Swift.String?
+  @objc public var geoLatitude: Swift.String?
+  @objc public var geoLongitude: Swift.String?
+  @objc public init(userId: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol WDCMNoticeDelegate {
+  @objc func wdcmNoticeLogin(_ view: WDCloudMallContainer)
+  @objc func wdcmNoticeLogout(_ view: WDCloudMallContainer)
+  @objc func wdcmNoticeShare(_ view: WDCloudMallContainer, parameters: [Swift.String : Any]?)
+  @objc func wdcmNoticeOpenURL(_ url: Foundation.URL)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class WDCloudMall : ObjectiveC.NSObject {
+  @objc public static let shared: WDCloudMall
+  @objc weak public var notice: WDCMNoticeDelegate?
+  @objc deinit
+}
+extension WDCloudMall {
+  @objc dynamic public func register(config: WDCloudMallConfig)
+  @objc dynamic public func createContainer() -> WDCloudMallContainer
+}
+extension WDCloudMall {
+  @objc dynamic public func login(user: WDCMUserModel, complete: @escaping (WDCMResponse) -> ())
+  @objc dynamic public func logout(user: WDCMUserModel, complete: @escaping (WDCMResponse) -> ())
+}
+@objc public class WDCloudMallConfig : ObjectiveC.NSObject {
+  @objc public init(appKey: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol WDCloudMallWebViewSettings {
+  @objc var url: Foundation.URL? { get }
+  @objc var canGoBack: Swift.Bool { get }
+  @objc var canGoForward: Swift.Bool { get }
+  @objc var loading: Swift.Bool { get }
+  @objc var title: Swift.String { get set }
+  @objc func goBack()
+  @objc func goForward()
+  @objc func stopLoading()
+  @objc func loadRequest(url: Swift.String)
+  @objc func reload()
+  @objc func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
+}
+@objc public protocol WDCMContainerDelegate {
+  @objc func wdcmContainerWillStartLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidStartLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidFinishLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidFailLoadWithError(_ view: WDCloudMallContainer, error: Swift.Error)
+  @objc func wdcmContainerUpdateTitle(_ view: WDCloudMallContainer, title: Swift.String)
+}
+@objc @_hasMissingDesignatedInitializers public class WDCloudMallContainer : UIKit.UIView {
+  @objc weak public var delegate: WDCMContainerDelegate?
+  @objc deinit
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+}
+extension WDCloudMallContainer : WDCloudMallWebViewSettings {
+  @objc dynamic public var url: Foundation.URL? {
+    @objc get
+  }
+  @objc dynamic public var canGoBack: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var canGoForward: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var loading: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var title: Swift.String {
+    @objc get
+    @objc set
+  }
+  @objc dynamic public func goBack()
+  @objc dynamic public func goForward()
+  @objc dynamic public func stopLoading()
+  @objc dynamic public func loadRequest(url: Swift.String)
+  @objc dynamic public func reload()
+  @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
+}
+@_hasMissingDesignatedInitializers @objc public class WDCMResponse : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int
+  @objc public var message: Swift.String
+  @objc public var data: [Swift.String : Any]
+  @objc public func toString() -> Swift.String
+  @objc public func toMap() -> [Swift.String : Any]
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol Then {
+}
+extension Then {
+  @inlinable public func with(_ block: (inout Self) throws -> Swift.Void) rethrows -> Self {
+    var copy = self
+    try block(&copy)
+    return copy
+  }
+  @inlinable public func `do`(_ block: (Self) throws -> Swift.Void) rethrows {
+    try block(self)
+  }
+}
+extension Then where Self : AnyObject {
+  @inlinable public func then(_ block: (Self) throws -> Swift.Void) rethrows -> Self {
+    try block(self)
+    return self
+  }
+}
+extension NSObject : Then {
+}
+extension CGPoint : Then {
+}
+extension CGRect : Then {
+}
+extension CGSize : Then {
+}
+extension CGVector : Then {
+}
+extension Array : Then {
+}
+extension Dictionary : Then {
+}
+extension Set : Then {
+}
+extension UIEdgeInsets : Then {
+}
+extension UIOffset : Then {
+}
+extension UIRectEdge : Then {
+}

@@ -4,6 +4,7 @@ platform :ios, '9.0'
 
 target 'WDCloudMall_Example' do
   pod 'WDCloudMall', :path => '../'
+  pod 'CryptoSwift', '~> 1.4.1'
 
   target 'WDCloudMall_Tests' do
     inherit! :search_paths

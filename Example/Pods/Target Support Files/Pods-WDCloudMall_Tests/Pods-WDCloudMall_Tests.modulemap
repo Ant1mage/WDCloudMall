@@ -1,0 +1,6 @@
+framework module Pods_WDCloudMall_Tests {
+  umbrella header "Pods-WDCloudMall_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

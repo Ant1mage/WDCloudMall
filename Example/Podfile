@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'WDCloudMall_Example' do
+  pod 'WDCloudMall', :path => '../'
+
+  target 'WDCloudMall_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -24,7 +24,7 @@
 		268BBED4ACEB369D5F48255959BDCC27 /* Pods-WDCloudMall_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D67193F12B9B77A23915135CC80F659 /* Pods-WDCloudMall_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29EB7FC5FCB017B10C7A56EEC67B6C87 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9120C8754FC0017E69DA0968455D517B /* Utils.swift */; };
 		29EBEF45DCEC1D6568413032FA8FB2DB /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AB32DFC0D1FDF4D3F2F04B4A55FFC5 /* BlockCipher.swift */; };
-		2AB9ACB71A24019022C189388D6774CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */; };
+		2AB9ACB71A24019022C189388D6774CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		2EF5C6A10700B5ACBD45F9D0461389A5 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3264C935207933B547D6946731D7C7F /* OFB.swift */; };
 		2FCC2C2EE5BA2372F3CCF70DAA028085 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB99CC11996E32C39DCDF7F7939C22F1 /* PKCS5.swift */; };
 		32DF053AF55490DBBCC8F5A4135E7A48 /* CryptoSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B1B62714C500FB6353ADB83A8D9DA31 /* CryptoSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,12 +32,13 @@
 		353721D2B910AE4F9B8196D7277242ED /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3999D3E57E75960C76DED600EC2A4E47 /* Data+Extension.swift */; };
 		3903D867E1B04DF17B5ACB08E4D496F5 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A079D1EBA246775B0B18426308610B3 /* PBKDF1.swift */; };
 		3BF80B98213E4900761B8E9C6FD57947 /* ISO10126Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E633B52F8A5EA5390AC57DE066260 /* ISO10126Padding.swift */; };
+		3FE2DDBDE69327FEE452597784341019 /* WDCloudMall-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4474FDCEDED96F79177E0D626CB0E6 /* WDCloudMall-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44A337C99C192862AC3E83D633178550 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F01C963AE13B3A63E07398B4B0DA8F /* Generics.swift */; };
-		455293CB3237E60314F28FC940E2E19E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */; };
+		455293CB3237E60314F28FC940E2E19E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		45670E07AAFDE8877911FA0FA180E8C8 /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814D8487FF9DDBDED0EE364707FE2F06 /* AEADChaCha20Poly1305.swift */; };
 		4764DB91CAEF26CA6EED99CB71389637 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E336A747E4E6BCC8B546671F2BACA25E /* AES+Foundation.swift */; };
 		4788461CD9B764A0C5E1E8A7E7304C6D /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60A417A39CC93C905863A0A84E3741 /* BlockModeOptions.swift */; };
-		4F0D399144A985B70646EFA1F613DB55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276D4E25B54B63C1EAF9A28482339D4C /* MapKit.framework */; };
+		4C94DB317E2D45577D609F0F300B2E14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		53042D9D194CD8BE861A5DD3781EF261 /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00D125E0B4530A6B169825C977719DA /* BlockDecryptor.swift */; };
 		53BF0FE77A91BC99F2CBA559D91F105F /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE5FC729318E9924AE823E16F9C64E5 /* PBKDF2.swift */; };
 		542C9E8C1561679C2B9596C7653D375E /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30B12AEB62B97B1D31FE0CFEC2D52F /* SHA2.swift */; };
@@ -49,7 +50,6 @@
 		6400D521667A6DE758C821E3ED5B2694 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148AC0ABF79809C89586CEB2A5A1C24A /* HMAC.swift */; };
 		6648FA49FC3EB82A27D7BA6D28A1671B /* Pods-WDCloudMall_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B16A941786623E1FD6FD371D20B013A9 /* Pods-WDCloudMall_Tests-dummy.m */; };
 		665964C5782D23DD55BD1D2B807E4740 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ADFF5B435685E31ABF2B660F649D0 /* SecureBytes.swift */; };
-		6A7B0FC49D459E8ED7758EA1E566FD2D /* WDCloudMall-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01EA0091FFC30784DA3855119FF940 /* WDCloudMall-dummy.m */; };
 		6BEBB9F7819614C8DBB686D19050CA7A /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1775F4C7E61C656EC0769D2D5EF2F1C /* UInt32+Extension.swift */; };
 		6CCA055AE1F2015447DE2CD4AC0980AE /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6234D5052E109AF903728A15DA1C2E /* HMAC+Foundation.swift */; };
 		6EFD6CAA2430FCC24D44C8F00BBBCFF5 /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144AF87C159ACBFB8E9A5A89B732FCEE /* StreamEncryptor.swift */; };
@@ -59,11 +59,12 @@
 		777E977F2C1ED28B2CBFC455C41243B3 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FFF4EDBE97C9361B5E16ABDF8BAC3C /* SHA1.swift */; };
 		7E55502F0987E7318FF739C9DDAC7387 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7164EAC0C157769E1C793B69E78C80D2 /* GCM.swift */; };
 		804059882A1C76A538EAED6E464A7DCE /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B97278EEDE480552F3C3D7B3FD2665 /* ECB.swift */; };
-		83E61E3800CA2F29DAD9337BABD5A290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */; };
+		83E61E3800CA2F29DAD9337BABD5A290 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		89F43849392A22634685D2CC339648EA /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640C4BD092394DFE71A80C85142851F6 /* AES.swift */; };
 		8BFE8E6BDEFBF870C1D0732BDF8F6967 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E70A4F42707315418171CFBD0654BA /* UInt128.swift */; };
 		8DA36E33306EFAA1275D13B978BB8666 /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DAB0966B87FF24B254733D73BEBC9C /* AEAD.swift */; };
 		92D3DA8C66C63AD5AB2FB84F76591AA5 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F73683E963B7AA3BDCDB1E13CDC476 /* PKCS7Padding.swift */; };
+		94BD8185BA4E9093FC03C2766A77588B /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02F277E52DAF876A715DB32929F08E /* ReplaceMe.swift */; };
 		95DDEA387C9E5E0FE454158A6175FA88 /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9458132F242368F69921A2A884227C /* StreamDecryptor.swift */; };
 		97BF3CCB628215A7A6336B907EDD84D8 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADBEF4BF76329CB2C7D26F542CCB33E /* Utils+Foundation.swift */; };
 		97F86BC6C70FFFEA6793B21EF6A7BBFF /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923A1BC5E524706D29D1C9CE40D3282 /* ChaCha20.swift */; };
@@ -74,7 +75,6 @@
 		ADBA50B933B7B857BC80FD659DA51DE9 /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353724DFBA36569937956E3C5714999B /* NoPadding.swift */; };
 		B20CD5B9D658110F9C374648D8FE753E /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F7F440AEF579363F38B08296A15B21 /* PCBC.swift */; };
 		B2AF71C08A4349665AEA3D6EC7F4A2C8 /* CryptoSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDF1A7C95B110C5BC9D098CB7040337 /* CryptoSwift-dummy.m */; };
-		B660879C06CBB1342FD388B4CDE8AD92 /* WDCloudMall-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4474FDCEDED96F79177E0D626CB0E6 /* WDCloudMall-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9D1270EAADE0A1F38D25EC5ABC096F0 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9212BFE074AE97643E0FE5F2BE68067 /* Bit.swift */; };
 		C10AEAE3170856A4A6ED972AF8CCFF4A /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7027B8B2F157C6422610024A3E096EF6 /* BlockMode.swift */; };
 		C1560D479D2C4290339F2153A1009695 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E1F957C9E1331BEC4083EB0A02105 /* Digest.swift */; };
@@ -84,16 +84,14 @@
 		D4135E6CF7800B813179A4DFB88BB112 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28550230FF116AE9A156824532DDC99 /* ChaCha20+Foundation.swift */; };
 		D618594A60716C12B8FBAA73F18EC31C /* OCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D87F54EFF1E153CF63437656348D271 /* OCB.swift */; };
 		D86D490CF982E629A578DED0E89F146F /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BA4C775D885B6627BABAE3333A37C8 /* Authenticator.swift */; };
-		DAD12BB64F3B85A153A9370B029F975E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */; };
 		DE39DBC5AAF719AFBCB7BB50025A772B /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E310EB4C8B7E6ACD4828C44476F8413 /* Blowfish.swift */; };
-		DE667BD0578179B000686EEF9AAB3604 /* WDCloudMall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0A9A562C59EE5C34C295F2613671C8 /* WDCloudMall.framework */; };
 		E0137D6D9AE5B6786272CFEE12EE329F /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8228D273644A4E44C2AF890AB023A7 /* Updatable.swift */; };
 		E5C3FFC08DB6B9B88307693FC0D986D2 /* Pods-WDCloudMall_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2746B59D8C9FA4D36B58EFC4EC6963BD /* Pods-WDCloudMall_Example-dummy.m */; };
 		E793B49B0F4F9444C35C938A84919D59 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85518DC590BEDBA53659378A0A773AEA /* Rabbit+Foundation.swift */; };
+		E9853398343C465F2EFAA9C1D447FAFD /* WDCloudMall-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC01EA0091FFC30784DA3855119FF940 /* WDCloudMall-dummy.m */; };
 		E9B1EE521C74E68921DD97D24EDC388A /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C019AA6AAD9EEE7BEC9CFB1A60A02C7 /* AES.Cryptors.swift */; };
 		EC7222CB5D2208398F18AAE16373D49A /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A219C1D264C8EA8E70B21908567BA5EB /* Array+Foundation.swift */; };
 		F54936D6E4E4D8360799608587FBE650 /* CMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D475356F3EBBE5EA3900B696EFF967 /* CMAC.swift */; };
-		F583C912CBC2AFD0B99F795B0B088DC6 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02F277E52DAF876A715DB32929F08E /* ReplaceMe.swift */; };
 		F7462C6596BBFFFF4EFB9DC8BA39B18F /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5C7073369B5F5AF6718A98B79CC385 /* Padding.swift */; };
 		F7B5F76F363F06CC58B18C19A4132205 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3A14C3A8364FFC66DF5726826F4EC4 /* CTR.swift */; };
 		FA0502B3678EC835EAEAB000529D762E /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D122520E7378A2BFFCCBB61F484675 /* Scrypt.swift */; };
@@ -109,19 +107,12 @@
 			remoteGlobalIDString = 92D670686DEDF6BA6DAD44F63C4B5E3C;
 			remoteInfo = WDCloudMall;
 		};
-		55A7765DBCF39F041D065D7F273029AF /* PBXContainerItemProxy */ = {
+		7A15D2F00EF6EE7990282DB9BC471C01 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99313990C1D76A6D1D017868B6975CC8;
 			remoteInfo = CryptoSwift;
-		};
-		7B457AC17E96450403B806FDAEAD6B3A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A8E6FE8F7260FD85B9708699A5CEDEDC;
-			remoteInfo = "Pods-WDCloudMall_Example";
 		};
 		AF1B2ED7D75EFDAF00436A1D0229CACE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -129,6 +120,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 99313990C1D76A6D1D017868B6975CC8;
 			remoteInfo = CryptoSwift;
+		};
+		D65E54B4AB30F3DDA44BE2711CBDC64D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8E6FE8F7260FD85B9708699A5CEDEDC;
+			remoteInfo = "Pods-WDCloudMall_Example";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -153,9 +151,7 @@
 		20BA4C775D885B6627BABAE3333A37C8 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
 		21AFE4D6EEBED3518CC49F9EC1C78E49 /* Pods-WDCloudMall_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDCloudMall_Example.modulemap"; sourceTree = "<group>"; };
 		22FFF4EDBE97C9361B5E16ABDF8BAC3C /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Sources/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
-		24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		2746B59D8C9FA4D36B58EFC4EC6963BD /* Pods-WDCloudMall_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WDCloudMall_Example-dummy.m"; sourceTree = "<group>"; };
-		276D4E25B54B63C1EAF9A28482339D4C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
 		283370B6F8B537F0626D5687766C1A43 /* WDCloudMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.debug.xcconfig; sourceTree = "<group>"; };
 		2A980D4A1B05E3972136B6E7DACC3A83 /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
 		31DAB0966B87FF24B254733D73BEBC9C /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
@@ -188,6 +184,7 @@
 		6DA5724D2E38F60D00433AE4E4CA8AD4 /* Pods-WDCloudMall_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDCloudMall_Tests.modulemap"; sourceTree = "<group>"; };
 		7027B8B2F157C6422610024A3E096EF6 /* BlockMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockMode.swift; path = Sources/CryptoSwift/BlockMode/BlockMode.swift; sourceTree = "<group>"; };
 		7164EAC0C157769E1C793B69E78C80D2 /* GCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GCM.swift; path = Sources/CryptoSwift/BlockMode/GCM.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		754E580D701624C8E0B14F708F0EA0C2 /* Pods-WDCloudMall_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WDCloudMall_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7712AF13BFEBAD467413E1160D7F9888 /* Pods-WDCloudMall_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WDCloudMall_Example"; path = Pods_WDCloudMall_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7923A1BC5E524706D29D1C9CE40D3282 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
@@ -207,7 +204,6 @@
 		99E319D64CB623F6A3B79E469BB7ABE4 /* CryptoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.release.xcconfig; sourceTree = "<group>"; };
 		9ADA2019849071A6188646DA8CE7D772 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
 		9B1B62714C500FB6353ADB83A8D9DA31 /* CryptoSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-umbrella.h"; sourceTree = "<group>"; };
-		9D0A9A562C59EE5C34C295F2613671C8 /* WDCloudMall.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WDCloudMall.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/WDCloudMall.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0D122520E7378A2BFFCCBB61F484675 /* Scrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Scrypt.swift; path = Sources/CryptoSwift/Scrypt.swift; sourceTree = "<group>"; };
 		A1775F4C7E61C656EC0769D2D5EF2F1C /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
@@ -266,6 +262,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6D07100F28761AC5003C36118D900877 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C94DB317E2D45577D609F0F300B2E14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		786D2BEBB917377ADEA762CD9F9E20D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,27 +286,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF86E27B739E8A1F7E959007E8787134 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DAD12BB64F3B85A153A9370B029F975E /* Foundation.framework in Frameworks */,
-				4F0D399144A985B70646EFA1F613DB55 /* MapKit.framework in Frameworks */,
-				DE667BD0578179B000686EEF9AAB3604 /* WDCloudMall.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3A54A42FC923B1B47977D807A91F605F /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		095C670ECBE0ED36916851FA2BC5B39F /* WDCloudMall */ = {
 			isa = PBXGroup;
 			children = (
@@ -340,16 +326,6 @@
 			path = "Target Support Files/Pods-WDCloudMall_Example";
 			sourceTree = "<group>";
 		};
-		3A54A42FC923B1B47977D807A91F605F /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				24118B2FB6E9ADE51EF7871729C713A9 /* Foundation.framework */,
-				276D4E25B54B63C1EAF9A28482339D4C /* MapKit.framework */,
-				9D0A9A562C59EE5C34C295F2613671C8 /* WDCloudMall.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 		42898C16AF1CF0765B09B3233169CDCA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +355,14 @@
 				B9AE7A9364A16B5C555277CF950A99E5 /* CryptoSwift */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		785BF118EBA548791139966D66CBFAC5 /* Pods-WDCloudMall_Tests */ = {
@@ -518,11 +502,19 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				105DE4091DF03225DB6FAE2219040B8D /* Development Pods */,
-				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				51EE574583210C182C446B997806718E /* Pods */,
 				96AF073C1377A94B5A09616688BCE973 /* Products */,
 				7DB2751C4EDA5FA0A971C72327681E5D /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F7488433AE7D6EF58459095C957298C9 /* Support Files */ = {
@@ -560,6 +552,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80DBC9B752B64C9B9EE39A05296887CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE2DDBDE69327FEE452597784341019 /* WDCloudMall-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		90C0EB340169DB04270A91EF339409F8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,31 +568,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7ABA5B2425590CFC3F9C07A3EDD135F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B660879C06CBB1342FD388B4CDE8AD92 /* WDCloudMall-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		92D670686DEDF6BA6DAD44F63C4B5E3C /* WDCloudMall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1E16C9C739E27AB5CF5350F44B8FDB0 /* Build configuration list for PBXNativeTarget "WDCloudMall" */;
+			buildConfigurationList = A78B1380D146AEAA06497C0D1236096A /* Build configuration list for PBXNativeTarget "WDCloudMall" */;
 			buildPhases = (
-				F7ABA5B2425590CFC3F9C07A3EDD135F /* Headers */,
-				A6916579C8D621153CA316DE752F1DBB /* [CP] Copy XCFrameworks */,
-				2D7D622F1B3C5818C0E4038916C1240B /* Sources */,
-				AF86E27B739E8A1F7E959007E8787134 /* Frameworks */,
-				DE1BB4296507823CF9BC262E51653ACE /* Resources */,
+				80DBC9B752B64C9B9EE39A05296887CF /* Headers */,
+				9C92C26E4B74D4EDC5BCFE4B04A4B50B /* [CP] Copy XCFrameworks */,
+				2C0A9C60329485891494E15537B5A7F3 /* Sources */,
+				6D07100F28761AC5003C36118D900877 /* Frameworks */,
+				45917D05DA148C875061114DC9099F8A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1695AB7A2370B4996C4CF0BD96511C5A /* PBXTargetDependency */,
+				294410DC1C77E93014975E6CC3AE7FDA /* PBXTargetDependency */,
 			);
 			name = WDCloudMall;
 			productName = WDCloudMall;
@@ -649,7 +641,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A28724DAC5B66DE5ACBB9231E5024F27 /* PBXTargetDependency */,
+				EFB332D4594A85CB7C26248DA2D15048 /* PBXTargetDependency */,
 			);
 			name = "Pods-WDCloudMall_Tests";
 			productName = Pods_WDCloudMall_Tests;
@@ -687,14 +679,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5BB9A0249DF492C4BAB8BC913F4991A0 /* Resources */ = {
+		45917D05DA148C875061114DC9099F8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE1BB4296507823CF9BC262E51653ACE /* Resources */ = {
+		5BB9A0249DF492C4BAB8BC913F4991A0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -718,7 +710,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A6916579C8D621153CA316DE752F1DBB /* [CP] Copy XCFrameworks */ = {
+		9C92C26E4B74D4EDC5BCFE4B04A4B50B /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -736,12 +728,12 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D7D622F1B3C5818C0E4038916C1240B /* Sources */ = {
+		2C0A9C60329485891494E15537B5A7F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F583C912CBC2AFD0B99F795B0B088DC6 /* ReplaceMe.swift in Sources */,
-				6A7B0FC49D459E8ED7758EA1E566FD2D /* WDCloudMall-dummy.m in Sources */,
+				94BD8185BA4E9093FC03C2766A77588B /* ReplaceMe.swift in Sources */,
+				E9853398343C465F2EFAA9C1D447FAFD /* WDCloudMall-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,11 +841,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1695AB7A2370B4996C4CF0BD96511C5A /* PBXTargetDependency */ = {
+		294410DC1C77E93014975E6CC3AE7FDA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CryptoSwift;
 			target = 99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */;
-			targetProxy = 55A7765DBCF39F041D065D7F273029AF /* PBXContainerItemProxy */;
+			targetProxy = 7A15D2F00EF6EE7990282DB9BC471C01 /* PBXContainerItemProxy */;
 		};
 		37E5A182AA95898D3A226CCE63EF980D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -867,11 +859,11 @@
 			target = 92D670686DEDF6BA6DAD44F63C4B5E3C /* WDCloudMall */;
 			targetProxy = 55507F840480E9C4D0E9A195FF08391D /* PBXContainerItemProxy */;
 		};
-		A28724DAC5B66DE5ACBB9231E5024F27 /* PBXTargetDependency */ = {
+		EFB332D4594A85CB7C26248DA2D15048 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WDCloudMall_Example";
 			target = A8E6FE8F7260FD85B9708699A5CEDEDC /* Pods-WDCloudMall_Example */;
-			targetProxy = 7B457AC17E96450403B806FDAEAD6B3A /* PBXContainerItemProxy */;
+			targetProxy = D65E54B4AB30F3DDA44BE2711CBDC64D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -908,6 +900,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		25318EB34C72B3D0D32893F70B1F9001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 283370B6F8B537F0626D5687766C1A43 /* WDCloudMall.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WDCloudMall/WDCloudMall-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WDCloudMall/WDCloudMall-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WDCloudMall/WDCloudMall.modulemap";
+				PRODUCT_MODULE_NAME = WDCloudMall;
+				PRODUCT_NAME = WDCloudMall;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1006,37 +1029,6 @@
 			};
 			name = Debug;
 		};
-		46DA61C080F90E3A3DD6793AA06FB629 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 283370B6F8B537F0626D5687766C1A43 /* WDCloudMall.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/WDCloudMall/WDCloudMall-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WDCloudMall/WDCloudMall-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WDCloudMall/WDCloudMall.modulemap";
-				PRODUCT_MODULE_NAME = WDCloudMall;
-				PRODUCT_NAME = WDCloudMall;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		4B114A709FD610F113BD8B1ED9249DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3E3618D4E5552E3EAEA6B550C1DA1C6 /* Pods-WDCloudMall_Tests.debug.xcconfig */;
@@ -1069,7 +1061,7 @@
 			};
 			name = Debug;
 		};
-		7AF8797D534E23B326537E47D2E91CED /* Release */ = {
+		C3F6BE1994637AFB3A21F6A468A906EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8B80F5563A60B068F418DE7AD2A6768 /* WDCloudMall.release.xcconfig */;
 			buildSettings = {
@@ -1299,11 +1291,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1E16C9C739E27AB5CF5350F44B8FDB0 /* Build configuration list for PBXNativeTarget "WDCloudMall" */ = {
+		A78B1380D146AEAA06497C0D1236096A /* Build configuration list for PBXNativeTarget "WDCloudMall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46DA61C080F90E3A3DD6793AA06FB629 /* Debug */,
-				7AF8797D534E23B326537E47D2E91CED /* Release */,
+				25318EB34C72B3D0D32893F70B1F9001 /* Debug */,
+				C3F6BE1994637AFB3A21F6A468A906EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

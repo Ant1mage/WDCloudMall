@@ -19,10 +19,9 @@
     "ios": "10.0"
   },
   "source_files": "WDCloudMall/Classes/**/*",
-  "frameworks": [
-    "WDCloudMall",
-    "MapKit"
-  ],
+  "xcconfig": {
+    "EXCLUDED_ARCHS": "armv7"
+  },
   "vendored_frameworks": "WDCloudMall.xcframework",
   "dependencies": {
     "CryptoSwift": [

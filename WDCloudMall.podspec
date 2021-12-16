@@ -28,6 +28,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'WDCloudMall/Classes/**/*'
+
+  s.xcconfig = { 'EXCLUDED_ARCHS' => 'armv7' }
+  # s.attributes_hash['extended'] ||= {'cocoapods-binary-source-swithcer' => '~> 1.0.0', "is_xcframework" => "true"}
   
   # s.resource_bundles = {
   #   'WDCloudMall' => ['WDCloudMall/Assets/*.png']

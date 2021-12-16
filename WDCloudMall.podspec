@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'WDCloudMall', 'MapKit'
+  # s.frameworks = 'UIKit', 'MapKit'
   s.vendored_frameworks = 'WDCloudMall.xcframework'
   s.dependency 'CryptoSwift', '1.4.1'
 end

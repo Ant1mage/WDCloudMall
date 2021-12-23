@@ -1,29 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WDCloudMall
 import CoreGraphics
+import CoreImage
 import CryptoSwift
 import Foundation
+import SnapKit
 import Swift
 import UIKit.UIGeometry
 import UIKit
 @_exported import WDCloudMall
 import WebKit
+import _Concurrency
 @objc public class WDCMUserModel : ObjectiveC.NSObject {
   @objc public var userId: Swift.String
-  @objc public var gender: Swift.Int
-  @objc public var nickName: Swift.String?
-  @objc public var birthday: Swift.String?
-  @objc public var extra: Swift.String?
-  @objc public var wxAccessToken: Swift.String?
-  @objc public var avatar: Swift.String?
-  @objc public var deviceId: Swift.String?
-  @objc public var deviceType: Swift.String?
-  @objc public var deviceName: Swift.String?
-  @objc public var geoLatitude: Swift.String?
-  @objc public var geoLongitude: Swift.String?
   @objc public init(userId: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol WDCMNoticeDelegate {
@@ -47,7 +38,6 @@ extension WDCloudMall {
 }
 @objc public class WDCloudMallConfig : ObjectiveC.NSObject {
   @objc public init(appKey: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol WDCloudMallWebViewSettings {
@@ -70,34 +60,33 @@ extension WDCloudMall {
   @objc func wdcmContainerDidFailLoadWithError(_ view: WDCloudMallContainer, error: Swift.Error)
   @objc func wdcmContainerUpdateTitle(_ view: WDCloudMallContainer, title: Swift.String)
 }
-@objc @_hasMissingDesignatedInitializers public class WDCloudMallContainer : UIKit.UIView {
-  @objc weak public var delegate: WDCMContainerDelegate?
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class WDCloudMallContainer : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: WDCMContainerDelegate?
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
 }
 extension WDCloudMallContainer : WDCloudMallWebViewSettings {
-  @objc dynamic public var url: Foundation.URL? {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var url: Foundation.URL? {
     @objc get
   }
-  @objc dynamic public var canGoBack: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoBack: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var canGoForward: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoForward: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var loading: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var loading: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var title: Swift.String {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var title: Swift.String {
     @objc get
     @objc set
   }
-  @objc dynamic public func goBack()
-  @objc dynamic public func goForward()
-  @objc dynamic public func stopLoading()
-  @objc dynamic public func loadRequest(url: Swift.String)
-  @objc dynamic public func reload()
-  @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goBack()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goForward()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func stopLoading()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func loadRequest(url: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func reload()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers @objc public class WDCMResponse : ObjectiveC.NSObject {
   @objc public var code: Swift.Int
@@ -105,46 +94,5 @@ extension WDCloudMallContainer : WDCloudMallWebViewSettings {
   @objc public var data: [Swift.String : Any]
   @objc public func toString() -> Swift.String
   @objc public func toMap() -> [Swift.String : Any]
-  @objc override dynamic public init()
   @objc deinit
-}
-public protocol Then {
-}
-extension Then {
-  @inlinable public func with(_ block: (inout Self) throws -> Swift.Void) rethrows -> Self {
-    var copy = self
-    try block(&copy)
-    return copy
-  }
-  @inlinable public func `do`(_ block: (Self) throws -> Swift.Void) rethrows {
-    try block(self)
-  }
-}
-extension Then where Self : AnyObject {
-  @inlinable public func then(_ block: (Self) throws -> Swift.Void) rethrows -> Self {
-    try block(self)
-    return self
-  }
-}
-extension NSObject : Then {
-}
-extension CGPoint : Then {
-}
-extension CGRect : Then {
-}
-extension CGSize : Then {
-}
-extension CGVector : Then {
-}
-extension Array : Then {
-}
-extension Dictionary : Then {
-}
-extension Set : Then {
-}
-extension UIEdgeInsets : Then {
-}
-extension UIOffset : Then {
-}
-extension UIRectEdge : Then {
 }

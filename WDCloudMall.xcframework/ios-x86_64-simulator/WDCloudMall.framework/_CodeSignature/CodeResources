@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		iwvDdaxILh+H/nzczvQivONnvsg=
+		ZhpfWZWw9y1RIV0o3PKxTx0Id/0=
 		</data>
 		<key>Headers/WDCloudMall-Swift.h</key>
 		<data>
-		l2WTLVK2DuhGcrO2i+xlZU6GGOA=
+		2bmUKhMaDJULDm4IKUyzJ4p24M8=
 		</data>
 		<key>Headers/WDCloudMall.h</key>
 		<data>
@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MBLv1OelJpiy7VDUSH3ALnMH7F4=
+		6k/ekBxpcljIkwfdfEvzeilJOog=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KpiikqOFkEbz6bUgbG6MD3e23Yw=
+		5hNhOJlo2LiWlk5b88+HK8GB1sI=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		K5ThTduxVX1JgGLTRTDYO9NImAQ=
+		47H3KkHEBRzHBw71gyHEQ+Z2qcQ=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p0Ycsp0b50G9VID8tAMACbAzDSQ=
+		mx9bEUI4DpQZq/f5WeqdUb0MaOU=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		KpiikqOFkEbz6bUgbG6MD3e23Yw=
+		5hNhOJlo2LiWlk5b88+HK8GB1sI=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		K5ThTduxVX1JgGLTRTDYO9NImAQ=
+		47H3KkHEBRzHBw71gyHEQ+Z2qcQ=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		p0Ycsp0b50G9VID8tAMACbAzDSQ=
+		mx9bEUI4DpQZq/f5WeqdUb0MaOU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>debug.xcconfig</key>
 		<data>
-		zQGZ3CJ6d15x+TTB8eW39wlkCBk=
+		MZLEBGd2GFv0AR0R9cWkEKJqRjc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cR2RdGW45PChW1AMh/XdJPI5eKY2V+yV8UZiHrMU3yE=
+			DNQNhRSj/uwLlLWeDoB5FjprOTBQ74apKBHVRzJ15Ag=
 			</data>
 		</dict>
 		<key>Headers/WDCloudMall-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MQLtZFu2UjGW+5x2+KQL2uXW6/bh3wJP9Sk3F7TtED8=
+			ybATmg675FBpDMutZmpU/GaAk0IjwePtr8JAM8VNKeQ=
 			</data>
 		</dict>
 		<key>Headers/WDCloudMall.h</key>
@@ -88,42 +88,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8rHp6JmdhZYp+s2S0Y4Az3lYOlGg++T4jkaNx9/GiA=
+			dWVxze+7wCNeFKYLuoAz9Hdtt4IpB2LI3mCem14am0I=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnXFw1G0mQLUWmmdoRKwV0H34+22XrrdiDRNQfHco0o=
+			kkPWpDLLfoSr8DE3xeL3xXlJ+QQsUObV1Rf4YCbxtG0=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y5DbCAo//KUQduL03Lw/IYCHtp7u7tu4VnpY96oaZeY=
+			GxHYbMOURjxv8ydr5YEJ/Giy+/oLfFbFEZazIPj0qZw=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K8rHp6JmdhZYp+s2S0Y4Az3lYOlGg++T4jkaNx9/GiA=
+			dWVxze+7wCNeFKYLuoAz9Hdtt4IpB2LI3mCem14am0I=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cnXFw1G0mQLUWmmdoRKwV0H34+22XrrdiDRNQfHco0o=
+			kkPWpDLLfoSr8DE3xeL3xXlJ+QQsUObV1Rf4YCbxtG0=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y5DbCAo//KUQduL03Lw/IYCHtp7u7tu4VnpY96oaZeY=
+			GxHYbMOURjxv8ydr5YEJ/Giy+/oLfFbFEZazIPj0qZw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -151,7 +151,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H5JqXXmsTjXpH4AnWy+82B6IPfY0kaaKsZsUA2jaQ5g=
+			XB3IWtetYGM4WT2H8fqkG5Y+3NuDCVslgXe4qNaNE9s=
 			</data>
 		</dict>
 	</dict>

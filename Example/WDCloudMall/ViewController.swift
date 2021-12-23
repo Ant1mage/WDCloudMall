@@ -13,7 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        WDCloudMall.shared.notice = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +22,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension ViewController: WDCMNoticeDelegate {
+    func wdcmNoticeLogin(_ view: WDCloudMallContainer) {
+        
+    }
+    
+    func wdcmNoticeLogout(_ view: WDCloudMallContainer) {
+        
+    }
+    
+    func wdcmNoticeShare(_ view: WDCloudMallContainer, parameters: [String : Any]?) {
+        
+    }
+    
+    func wdcmNoticeOpenURL(_ url: URL) {
+        
+    }
 }
 

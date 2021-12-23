@@ -27,8 +27,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
-
   s.source_files = 'WDCloudMall/Classes/**/*'
 
   s.xcconfig = { 'EXCLUDED_ARCHS' => 'armv7' }
@@ -41,6 +39,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.vendored_frameworks = 'WDCloudMall.xcframework'
-  s.dependency 'CryptoSwift', '1.4.1'
-  s.dependency 'SnapKit', '5.0.1'
+  s.dependency 'CryptoSwift'
+  s.dependency 'SnapKit'
 end

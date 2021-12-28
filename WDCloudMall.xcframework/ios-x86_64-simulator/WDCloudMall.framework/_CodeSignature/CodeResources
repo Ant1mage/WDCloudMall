@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		nwr5GVVV9R6FPNK/m+27zJv/wcY=
+		niBRR1KmI2LSYUlX/RFlS/hOIPk=
 		</data>
 		<key>Headers/WDCloudMall-Swift.h</key>
 		<data>
-		wWHHTHNURQGSqpS5ikPg6wHVJDE=
+		3FDWxRBiFjO6YZAisV3hHxU+hC0=
 		</data>
 		<key>Headers/WDCloudMall.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5lu7LLb7dI/YXUuGBBriaYhi7Jo=
+		qSp7VxSzIoy9Acz1kMpl8Xr1fSk=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		swvd6f4MIKKLV/pCNNy77bk2MWc=
+		Nfcqn7qnOG4F4Gi6pbOp4t1UkGE=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		5lu7LLb7dI/YXUuGBBriaYhi7Jo=
+		qSp7VxSzIoy9Acz1kMpl8Xr1fSk=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		swvd6f4MIKKLV/pCNNy77bk2MWc=
+		Nfcqn7qnOG4F4Gi6pbOp4t1UkGE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,14 +67,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/UsZw818G7RfLuwOp4cJes/gb1cg2Kh5RZkWkJn50Qg=
+			zxlSClLKf/KNYtwt26yuVnP2tuDf/kYMB5yxe8WnPj0=
 			</data>
 		</dict>
 		<key>Headers/WDCloudMall-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lfp3QAgO+0TfBr9sbOQqXIXeVCoVFFoHCV5ezrvkP3E=
+			3lwEh8gUJl2124j6kLavJP8AaTHJZGd7eGwBi23i2aM=
 			</data>
 		</dict>
 		<key>Headers/WDCloudMall.h</key>
@@ -95,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YJt/xSsbK0tSVRk7SVGhe/LTP4qd0uThztPPwqDtZ/w=
+			hK1uRxD4spCsuQOCFelzOICcurFZQtGIzgYBZF8Zacw=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NM5QMltAJRXQ5r82bMRh7Hbl678Oo9WsQGd+phhgCGo=
+			ScvrXoqZRQmxm3WspO2daFwbkz2oi2BbulkiB9coDUo=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
@@ -116,14 +116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YJt/xSsbK0tSVRk7SVGhe/LTP4qd0uThztPPwqDtZ/w=
+			hK1uRxD4spCsuQOCFelzOICcurFZQtGIzgYBZF8Zacw=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NM5QMltAJRXQ5r82bMRh7Hbl678Oo9WsQGd+phhgCGo=
+			ScvrXoqZRQmxm3WspO2daFwbkz2oi2BbulkiB9coDUo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

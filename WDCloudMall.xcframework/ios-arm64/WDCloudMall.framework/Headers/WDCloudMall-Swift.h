@@ -209,6 +209,53 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+@class UIColor;
+@class NSNumber;
+@class NSString;
+@class NSAttributedString;
+@class UIFont;
+@class NSCoder;
+@class UITouch;
+@class UIEvent;
+
+IB_DESIGNABLE
+SWIFT_CLASS("_TtC11WDCloudMall11ActiveLabel")
+@interface ActiveLabel : UILabel
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull mentionColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable mentionSelectedColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull hashtagColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable hashtagSelectedColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nonnull URLColor;
+@property (nonatomic, strong) IBInspectable UIColor * _Nullable URLSelectedColor;
+@property (nonatomic) IBInspectable CGFloat lineSpacing;
+@property (nonatomic) IBInspectable CGFloat minimumLineHeight;
+@property (nonatomic, copy) IBInspectable NSString * _Nullable highlightFontName;
+@property (nonatomic, copy) NSString * _Nullable text;
+@property (nonatomic, strong) NSAttributedString * _Nullable attributedText;
+@property (nonatomic, strong) UIFont * _Null_unspecified font;
+@property (nonatomic, strong) UIColor * _Null_unspecified textColor;
+@property (nonatomic) NSTextAlignment textAlignment;
+@property (nonatomic) NSInteger numberOfLines;
+@property (nonatomic) NSLineBreakMode lineBreakMode;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)awakeFromNib;
+- (void)drawTextInRect:(CGRect)rect;
+@property (nonatomic, readonly) CGSize intrinsicContentSize;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesCancelled:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)touchesEnded:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+@end
+
+@class UIGestureRecognizer;
+
+@interface ActiveLabel (SWIFT_EXTENSION(WDCloudMall)) <UIGestureRecognizerDelegate>
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 
 
@@ -227,7 +274,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 @class WDCloudMallContainer;
-@class NSString;
 
 SWIFT_PROTOCOL("_TtP11WDCloudMall21WDCMContainerDelegate_")
 @protocol WDCMContainerDelegate
@@ -248,7 +294,6 @@ SWIFT_PROTOCOL("_TtP11WDCloudMall18WDCMNoticeDelegate_")
 - (void)wdcmNoticeOpenURL:(NSURL * _Nonnull)url;
 @end
 
-@class NSNumber;
 
 SWIFT_CLASS("_TtC11WDCloudMall12WDCMResponse")
 @interface WDCMResponse : NSObject
@@ -301,7 +346,6 @@ SWIFT_CLASS("_TtC11WDCloudMall17WDCloudMallConfig")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC11WDCloudMall20WDCloudMallContainer")
 @interface WDCloudMallContainer : UIView

@@ -54,6 +54,119 @@ extension WDCloudMall {
   @objc func reload()
   @objc func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
 }
+public protocol ActiveLabelDelegate : AnyObject {
+  func didSelect(_ text: Swift.String, type: WDCloudMall.ActiveType)
+}
+public typealias ConfigureLinkAttribute = (WDCloudMall.ActiveType, [Foundation.NSAttributedString.Key : Any], Swift.Bool) -> ([Foundation.NSAttributedString.Key : Any])
+@objc @_inheritsConvenienceInitializers @IBDesignable open class ActiveLabel : UIKit.UILabel {
+  weak open var delegate: WDCloudMall.ActiveLabelDelegate?
+  open var enabledTypes: [WDCloudMall.ActiveType]
+  open var urlMaximumLength: Swift.Int?
+  open var configureLinkAttribute: WDCloudMall.ConfigureLinkAttribute?
+  @objc @IBInspectable open var mentionColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var mentionSelectedColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var hashtagColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var hashtagSelectedColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var URLColor: UIKit.UIColor {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable open var URLSelectedColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+  open var customColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
+    get
+    set
+  }
+  open var customSelectedColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
+    get
+    set
+  }
+  @objc @IBInspectable public var lineSpacing: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var minimumLineHeight: CoreGraphics.CGFloat {
+    @objc get
+    @objc set
+  }
+  @objc @IBInspectable public var highlightFontName: Swift.String? {
+    @objc get
+    @objc set
+  }
+  public var highlightFontSize: CoreGraphics.CGFloat? {
+    get
+    set
+  }
+  open func handleMentionTap(_ handler: @escaping (Swift.String) -> ())
+  open func handleHashtagTap(_ handler: @escaping (Swift.String) -> ())
+  open func handleURLTap(_ handler: @escaping (Foundation.URL) -> ())
+  open func handleCustomTap(for type: WDCloudMall.ActiveType, handler: @escaping (Swift.String) -> ())
+  open func handleEmailTap(_ handler: @escaping (Swift.String) -> ())
+  open func removeHandle(for type: WDCloudMall.ActiveType)
+  open func filterMention(_ predicate: @escaping (Swift.String) -> Swift.Bool)
+  open func filterHashtag(_ predicate: @escaping (Swift.String) -> Swift.Bool)
+  @objc override dynamic open var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var font: UIKit.UIFont! {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var textColor: UIKit.UIColor! {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var numberOfLines: Swift.Int {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic open var lineBreakMode: UIKit.NSLineBreakMode {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc override dynamic open func awakeFromNib()
+  @objc override dynamic open func drawText(in rect: CoreGraphics.CGRect)
+  @discardableResult
+  open func customize(_ block: (WDCloudMall.ActiveLabel) -> ()) -> WDCloudMall.ActiveLabel
+  @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @objc get
+  }
+  @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+extension ActiveLabel : UIKit.UIGestureRecognizerDelegate {
+  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+}
 @objc public protocol WDCMContainerDelegate {
   @objc func wdcmContainerWillStartLoad(_ view: WDCloudMall.WDCloudMallContainer)
   @objc func wdcmContainerDidStartLoad(_ view: WDCloudMall.WDCloudMallContainer)
@@ -99,5 +212,19 @@ extension WDCloudMallContainer : WDCloudMall.WDCloudMallWebViewSettings {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum ActiveType {
+  case mention
+  case hashtag
+  case url
+  case email
+  case custom(pattern: Swift.String)
+}
+extension ActiveType : Swift.Hashable, Swift.Equatable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func == (lhs: WDCloudMall.ActiveType, rhs: WDCloudMall.ActiveType) -> Swift.Bool
 extension UIColor {
 }

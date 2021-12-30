@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WDCloudMall
 import CoreGraphics
 import CoreImage
@@ -11,10 +11,10 @@ import UIKit.UIGeometry
 import UIKit
 @_exported import WDCloudMall
 import WebKit
+import _Concurrency
 @objc public class WDCMUserModel : ObjectiveC.NSObject {
   @objc public var userId: Swift.String
   @objc public init(userId: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol WDCMNoticeDelegate {
@@ -28,17 +28,16 @@ import WebKit
   @objc weak public var notice: WDCloudMall.WDCMNoticeDelegate?
   @objc deinit
 }
-extension WDCloudMall {
+extension WDCloudMall.WDCloudMall {
   @objc dynamic public func register(config: WDCloudMall.WDCloudMallConfig)
   @objc dynamic public func createContainer() -> WDCloudMall.WDCloudMallContainer
 }
-extension WDCloudMall {
+extension WDCloudMall.WDCloudMall {
   @objc dynamic public func login(user: WDCloudMall.WDCMUserModel, complete: @escaping (WDCloudMall.WDCMResponse) -> ())
   @objc dynamic public func logout(user: WDCloudMall.WDCMUserModel, complete: @escaping (WDCloudMall.WDCMResponse) -> ())
 }
 @objc public class WDCloudMallConfig : ObjectiveC.NSObject {
   @objc public init(appKey: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol WDCloudMallWebViewSettings {
@@ -58,114 +57,114 @@ public protocol ActiveLabelDelegate : AnyObject {
   func didSelect(_ text: Swift.String, type: WDCloudMall.ActiveType)
 }
 public typealias ConfigureLinkAttribute = (WDCloudMall.ActiveType, [Foundation.NSAttributedString.Key : Any], Swift.Bool) -> ([Foundation.NSAttributedString.Key : Any])
-@objc @_inheritsConvenienceInitializers @IBDesignable open class ActiveLabel : UIKit.UILabel {
-  weak open var delegate: WDCloudMall.ActiveLabelDelegate?
-  open var enabledTypes: [WDCloudMall.ActiveType]
-  open var urlMaximumLength: Swift.Int?
-  open var configureLinkAttribute: WDCloudMall.ConfigureLinkAttribute?
-  @objc @IBInspectable open var mentionColor: UIKit.UIColor {
+@objc @_inheritsConvenienceInitializers @IBDesignable @_Concurrency.MainActor(unsafe) open class ActiveLabel : UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) weak open var delegate: WDCloudMall.ActiveLabelDelegate?
+  @_Concurrency.MainActor(unsafe) open var enabledTypes: [WDCloudMall.ActiveType]
+  @_Concurrency.MainActor(unsafe) open var urlMaximumLength: Swift.Int?
+  @_Concurrency.MainActor(unsafe) open var configureLinkAttribute: WDCloudMall.ConfigureLinkAttribute?
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var mentionColor: UIKit.UIColor {
     @objc get
     @objc set
   }
-  @objc @IBInspectable open var mentionSelectedColor: UIKit.UIColor? {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var mentionSelectedColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
-  @objc @IBInspectable open var hashtagColor: UIKit.UIColor {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var hashtagColor: UIKit.UIColor {
     @objc get
     @objc set
   }
-  @objc @IBInspectable open var hashtagSelectedColor: UIKit.UIColor? {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var hashtagSelectedColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
-  @objc @IBInspectable open var URLColor: UIKit.UIColor {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var URLColor: UIKit.UIColor {
     @objc get
     @objc set
   }
-  @objc @IBInspectable open var URLSelectedColor: UIKit.UIColor? {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) open var URLSelectedColor: UIKit.UIColor? {
     @objc get
     @objc set
   }
-  open var customColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
+  @_Concurrency.MainActor(unsafe) open var customColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
     get
     set
   }
-  open var customSelectedColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
+  @_Concurrency.MainActor(unsafe) open var customSelectedColor: [WDCloudMall.ActiveType : UIKit.UIColor] {
     get
     set
   }
-  @objc @IBInspectable public var lineSpacing: CoreGraphics.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var lineSpacing: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
-  @objc @IBInspectable public var minimumLineHeight: CoreGraphics.CGFloat {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var minimumLineHeight: CoreGraphics.CGFloat {
     @objc get
     @objc set
   }
-  @objc @IBInspectable public var highlightFontName: Swift.String? {
+  @objc @IBInspectable @_Concurrency.MainActor(unsafe) public var highlightFontName: Swift.String? {
     @objc get
     @objc set
   }
-  public var highlightFontSize: CoreGraphics.CGFloat? {
+  @_Concurrency.MainActor(unsafe) public var highlightFontSize: CoreGraphics.CGFloat? {
     get
     set
   }
-  open func handleMentionTap(_ handler: @escaping (Swift.String) -> ())
-  open func handleHashtagTap(_ handler: @escaping (Swift.String) -> ())
-  open func handleURLTap(_ handler: @escaping (Foundation.URL) -> ())
-  open func handleCustomTap(for type: WDCloudMall.ActiveType, handler: @escaping (Swift.String) -> ())
-  open func handleEmailTap(_ handler: @escaping (Swift.String) -> ())
-  open func removeHandle(for type: WDCloudMall.ActiveType)
-  open func filterMention(_ predicate: @escaping (Swift.String) -> Swift.Bool)
-  open func filterHashtag(_ predicate: @escaping (Swift.String) -> Swift.Bool)
-  @objc override dynamic open var text: Swift.String? {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) open func handleMentionTap(_ handler: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) open func handleHashtagTap(_ handler: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) open func handleURLTap(_ handler: @escaping (Foundation.URL) -> ())
+  @_Concurrency.MainActor(unsafe) open func handleCustomTap(for type: WDCloudMall.ActiveType, handler: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) open func handleEmailTap(_ handler: @escaping (Swift.String) -> ())
+  @_Concurrency.MainActor(unsafe) open func removeHandle(for type: WDCloudMall.ActiveType)
+  @_Concurrency.MainActor(unsafe) open func filterMention(_ predicate: @escaping (Swift.String) -> Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func filterHashtag(_ predicate: @escaping (Swift.String) -> Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var text: Swift.String? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var attributedText: Foundation.NSAttributedString? {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var font: UIKit.UIFont! {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var font: UIKit.UIFont! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var textColor: UIKit.UIColor! {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textColor: UIKit.UIColor! {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var textAlignment: UIKit.NSTextAlignment {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var numberOfLines: Swift.Int {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var numberOfLines: Swift.Int {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic open var lineBreakMode: UIKit.NSLineBreakMode {
-    @objc get
-    @objc set
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var lineBreakMode: UIKit.NSLineBreakMode {
+    @_Concurrency.MainActor(unsafe) @objc get
+    @_Concurrency.MainActor(unsafe) @objc set
   }
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc override dynamic open func awakeFromNib()
-  @objc override dynamic open func drawText(in rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func drawText(in rect: CoreGraphics.CGRect)
   @discardableResult
-  open func customize(_ block: (WDCloudMall.ActiveLabel) -> ()) -> WDCloudMall.ActiveLabel
-  @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
-    @objc get
+  @_Concurrency.MainActor(unsafe) open func customize(_ block: (_ label: WDCloudMall.ActiveLabel) -> ()) -> WDCloudMall.ActiveLabel
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var intrinsicContentSize: CoreGraphics.CGSize {
+    @_Concurrency.MainActor(unsafe) @objc get
   }
-  @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
-  @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesMoved(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesCancelled(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func touchesEnded(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @objc deinit
 }
-extension ActiveLabel : UIKit.UIGestureRecognizerDelegate {
-  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+extension WDCloudMall.ActiveLabel : UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
 }
 @objc public protocol WDCMContainerDelegate {
   @objc func wdcmContainerWillStartLoad(_ view: WDCloudMall.WDCloudMallContainer)
@@ -174,34 +173,33 @@ extension ActiveLabel : UIKit.UIGestureRecognizerDelegate {
   @objc func wdcmContainerDidFailLoadWithError(_ view: WDCloudMall.WDCloudMallContainer, error: Swift.Error)
   @objc func wdcmContainerUpdateTitle(_ view: WDCloudMall.WDCloudMallContainer, title: Swift.String)
 }
-@objc @_hasMissingDesignatedInitializers public class WDCloudMallContainer : UIKit.UIView {
-  @objc weak public var delegate: WDCloudMall.WDCMContainerDelegate?
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class WDCloudMallContainer : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: WDCloudMall.WDCMContainerDelegate?
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
 }
-extension WDCloudMallContainer : WDCloudMall.WDCloudMallWebViewSettings {
-  @objc dynamic public var url: Foundation.URL? {
+extension WDCloudMall.WDCloudMallContainer : WDCloudMall.WDCloudMallWebViewSettings {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var url: Foundation.URL? {
     @objc get
   }
-  @objc dynamic public var canGoBack: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoBack: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var canGoForward: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoForward: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var loading: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var loading: Swift.Bool {
     @objc get
   }
-  @objc dynamic public var title: Swift.String {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var title: Swift.String {
     @objc get
     @objc set
   }
-  @objc dynamic public func goBack()
-  @objc dynamic public func goForward()
-  @objc dynamic public func stopLoading()
-  @objc dynamic public func loadRequest(url: Swift.String)
-  @objc dynamic public func reload()
-  @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goBack()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goForward()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func stopLoading()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func loadRequest(url: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func reload()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
 }
 @_hasMissingDesignatedInitializers @objc public class WDCMResponse : ObjectiveC.NSObject {
   @objc public var code: Swift.Int
@@ -209,7 +207,6 @@ extension WDCloudMallContainer : WDCloudMall.WDCloudMallWebViewSettings {
   @objc public var data: [Swift.String : Any]
   @objc public func toString() -> Swift.String
   @objc public func toMap() -> [Swift.String : Any]
-  @objc override dynamic public init()
   @objc deinit
 }
 public enum ActiveType {
@@ -219,12 +216,10 @@ public enum ActiveType {
   case email
   case custom(pattern: Swift.String)
 }
-extension ActiveType : Swift.Hashable, Swift.Equatable {
+extension WDCloudMall.ActiveType : Swift.Hashable, Swift.Equatable {
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
 public func == (lhs: WDCloudMall.ActiveType, rhs: WDCloudMall.ActiveType) -> Swift.Bool
-extension UIColor {
-}

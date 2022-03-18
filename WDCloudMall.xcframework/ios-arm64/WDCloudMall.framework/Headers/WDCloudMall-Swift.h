@@ -287,7 +287,7 @@ SWIFT_PROTOCOL("_TtP11WDCloudMall21WDCMContainerDelegate_")
 @class NSURL;
 
 SWIFT_PROTOCOL("_TtP11WDCloudMall18WDCMNoticeDelegate_")
-@protocol WDCMNoticeDelegate
+@protocol WDCMNoticeDelegate <NSObject>
 - (void)wdcmNoticeLogin:(WDCloudMallContainer * _Nonnull)view;
 - (void)wdcmNoticeLogout:(WDCloudMallContainer * _Nonnull)view;
 - (void)wdcmNoticeShare:(WDCloudMallContainer * _Nonnull)view parameters:(NSDictionary<NSString *, id> * _Nullable)parameters;

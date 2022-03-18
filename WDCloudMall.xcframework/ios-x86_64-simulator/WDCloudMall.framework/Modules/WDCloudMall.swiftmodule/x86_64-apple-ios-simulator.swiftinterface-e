@@ -17,7 +17,7 @@ import _Concurrency
   @objc public init(userId: Swift.String)
   @objc deinit
 }
-@objc public protocol WDCMNoticeDelegate {
+@objc public protocol WDCMNoticeDelegate : ObjectiveC.NSObjectProtocol {
   @objc func wdcmNoticeLogin(_ view: WDCloudMall.WDCloudMallContainer)
   @objc func wdcmNoticeLogout(_ view: WDCloudMall.WDCloudMallContainer)
   @objc func wdcmNoticeShare(_ view: WDCloudMall.WDCloudMallContainer, parameters: [Swift.String : Any]?)

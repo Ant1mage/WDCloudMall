@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/WDCloudMall-Swift.h</key>
 		<data>
-		0FOAFVA7uxCp+RN4zHHLVbgJeTo=
+		hYwVxNALtFZ4Cm/lebRv9fwG3P0=
 		</data>
 		<key>Headers/WDCloudMall.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		EprR1VR+RqHOy8GbVp1/5apwEGs=
+		1K1YiJ9nPnYgeOu6mq7uwVpLX4o=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		djgG3CUjz2M3b3wLT/3V11XNeFQ=
+		Z8jXl8bC9z/ZhVtfLwMfTCKHciM=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		EprR1VR+RqHOy8GbVp1/5apwEGs=
+		1K1YiJ9nPnYgeOu6mq7uwVpLX4o=
 		</data>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		djgG3CUjz2M3b3wLT/3V11XNeFQ=
+		Z8jXl8bC9z/ZhVtfLwMfTCKHciM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			STSk0p4LMF8gx1EDO/2LeB/tEW7qaEDdTbSgb+//GLY=
+			Dciclsp60VkWB6ovp6QulmgRsUMiM9y+8b97zJIF8gc=
 			</data>
 		</dict>
 		<key>Headers/WDCloudMall.h</key>
@@ -95,14 +95,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TvcTz58xNLbyxCUbe0xaNma5Y5WZLl2HZ2CkB0k20uY=
+			XavNx9Cxs03b9/v6FvYx16vzYLgLAfsjkV5v9JjuD3I=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkjdIPDa5IVJmS2JD54Bwy+8DOnYTITFOQvKL8B1XR0=
+			BWlUzgvuW6NPBRtAsNEoScjQsz6fXMILiRnQbA85PYg=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftdoc</key>
@@ -116,14 +116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TvcTz58xNLbyxCUbe0xaNma5Y5WZLl2HZ2CkB0k20uY=
+			XavNx9Cxs03b9/v6FvYx16vzYLgLAfsjkV5v9JjuD3I=
 			</data>
 		</dict>
 		<key>Modules/WDCloudMall.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UkjdIPDa5IVJmS2JD54Bwy+8DOnYTITFOQvKL8B1XR0=
+			BWlUzgvuW6NPBRtAsNEoScjQsz6fXMILiRnQbA85PYg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

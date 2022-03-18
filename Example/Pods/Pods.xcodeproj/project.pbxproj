@@ -18,7 +18,6 @@
 				2B72E86261E9B90F1700A6140C7B912E /* PBXTargetDependency */,
 			);
 			name = WDCloudMall;
-			productName = WDCloudMall;
 		};
 /* End PBXAggregateTarget section */
 
@@ -213,7 +212,6 @@
 		0F0FFF67F1785D2FDD98D07AA1FE70E1 /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Sources/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
 		1039227DFEAD3E616C4CCE1A2B142C7E /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Sources/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
 		109C3878DCB17ED600374AC7D7D20D7A /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		114FD1B527E45AB5005C257F /* WDCloudMall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
 		138C7B72A41121E1A79BF20E0E824FAB /* BlockCipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockCipher.swift; path = Sources/CryptoSwift/BlockCipher.swift; sourceTree = "<group>"; };
 		149FE2EDB164C20DCE9E175FB9813658 /* CryptoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.debug.xcconfig; sourceTree = "<group>"; };
 		1566F672D33EE57158867FE08EBFF130 /* AES.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.swift; path = Sources/CryptoSwift/AES.swift; sourceTree = "<group>"; };
@@ -226,9 +224,10 @@
 		237711E4E5B3BBA5617BC9E67F54CADD /* WDCloudMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.debug.xcconfig; sourceTree = "<group>"; };
 		239307047A573E278A54EC24349CDFD8 /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
 		23DBD14C3B39F7928BA745F58F1F9B26 /* AES+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AES+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/AES+Foundation.swift"; sourceTree = "<group>"; };
+		24FB6DB357BE0197A90A52D496D85CDA /* WDCloudMall.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
 		270A84BED06C69D1843F006CFFD03452 /* CFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CFB.swift; path = Sources/CryptoSwift/BlockMode/CFB.swift; sourceTree = "<group>"; };
 		2746B59D8C9FA4D36B58EFC4EC6963BD /* Pods-WDCloudMall_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WDCloudMall_Example-dummy.m"; sourceTree = "<group>"; };
-		27A089B42AC3921406D859EC2E611B32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		27A089B42AC3921406D859EC2E611B32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		2B1B9EF8241F3488D7B964816ADF39E4 /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
 		32172B20E7E6180DF7A923F8401763C6 /* Authenticator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authenticator.swift; path = Sources/CryptoSwift/Authenticator.swift; sourceTree = "<group>"; };
 		32DA6495A3D7A618AE2E20192FEC436D /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
@@ -299,7 +298,7 @@
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DB62AFDFC18F51315F58A71AE7D021 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
 		9C9CB4334958621EBDA7ADE462F073DF /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F237863021B82CE8369EE0558B21B13 /* CryptoSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CryptoSwift-Info.plist"; sourceTree = "<group>"; };
 		9FE4E3424C2B66E9DF57AE287F6F15BA /* BlockEncryptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockEncryptor.swift; path = Sources/CryptoSwift/BlockEncryptor.swift; sourceTree = "<group>"; };
 		A47C34F3FC42AA36459C79A294B689E2 /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
@@ -337,7 +336,7 @@
 		E70DC9A3E7CEDAAB5BFF6E8245174610 /* SHA3.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA3.swift; path = Sources/CryptoSwift/SHA3.swift; sourceTree = "<group>"; };
 		E71FA8DA39BAD9638986AAE6F323EE33 /* ConstraintDirectionalInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDirectionalInsetTarget.swift; path = Source/ConstraintDirectionalInsetTarget.swift; sourceTree = "<group>"; };
 		E80064F172017577D560E5E4C11621C2 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
-		E8014479853E215F94A105042B98D96C /* WDCloudMall.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WDCloudMall.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E8014479853E215F94A105042B98D96C /* WDCloudMall.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WDCloudMall.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EA4B01FDC3FCDA533A848EB7A8EB2F36 /* ChaCha20.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChaCha20.swift; path = Sources/CryptoSwift/ChaCha20.swift; sourceTree = "<group>"; };
 		EA9535887D76221DFA36A9F903709619 /* Pods-WDCloudMall_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDCloudMall_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EAC78458AC68F8F0C25F95ED3DA4BDE2 /* AES.Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AES.Cryptors.swift; path = Sources/CryptoSwift/AES.Cryptors.swift; sourceTree = "<group>"; };
@@ -345,9 +344,9 @@
 		EF83E68F36DFA767DB2B7D25D3D33870 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		EF99668DB16ED9C030195DF618031141 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		EFCBF331993371E40176A8A9C9CC280F /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
-		F3A9F8E74FE1BD1C852CC321B81BC1BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F3A9F8E74FE1BD1C852CC321B81BC1BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F7FDF651A0814496944F7989F13C5515 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
-		F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F821BCD78873030E49F3AC95F74B4B92 /* CBCMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CBCMAC.swift; path = Sources/CryptoSwift/CBCMAC.swift; sourceTree = "<group>"; };
 		F84AE792E3DD2889666C2EEB8C5036A2 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
 		F97F24B3E8AF3A53E6CC839525B76B08 /* PBKDF2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF2.swift; path = Sources/CryptoSwift/PKCS/PBKDF2.swift; sourceTree = "<group>"; };
@@ -475,13 +474,14 @@
 				049DF85E6159238730AACEC998252A41 /* UILayoutSupport+Extensions.swift */,
 				8A4A7AB742DD77353EED494CBE730FB4 /* Support Files */,
 			);
+			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
 		645361D7E3E72C739006895F860F5DC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */,
+				F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */,
 				7712AF13BFEBAD467413E1160D7F9888 /* Pods-WDCloudMall_Example */,
 				8B2319A658C04A60F8701B9C85432829 /* Pods-WDCloudMall_Tests */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
@@ -582,6 +582,7 @@
 				C72FB17CB39A7DE883B437DDB1C149DA /* ZeroPadding.swift */,
 				DB934B2360FE947250560EE7C83EC474 /* Support Files */,
 			);
+			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
@@ -628,7 +629,7 @@
 		988837470C26E1C50088EDFE594120AD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				114FD1B527E45AB5005C257F /* WDCloudMall.xcframework */,
+				24FB6DB357BE0197A90A52D496D85CDA /* WDCloudMall.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -759,7 +760,7 @@
 			);
 			name = CryptoSwift;
 			productName = CryptoSwift;
-			productReference = F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift.framework */;
+			productReference = F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */;
 			productType = "com.apple.product-type.framework";
 		};
 		A8E6FE8F7260FD85B9708699A5CEDEDC /* Pods-WDCloudMall_Example */ = {
@@ -1133,7 +1134,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
 				PRODUCT_MODULE_NAME = CryptoSwift;
@@ -1271,7 +1272,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1470,7 +1472,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/CryptoSwift/CryptoSwift-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/CryptoSwift/CryptoSwift-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/CryptoSwift/CryptoSwift.modulemap";
 				PRODUCT_MODULE_NAME = CryptoSwift;

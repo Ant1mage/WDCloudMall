@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDCloudMall'
-  s.version          = '1.0.3-rc'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of WDCloudMall.'
 
 # This description is used to generate tags and improve search results.

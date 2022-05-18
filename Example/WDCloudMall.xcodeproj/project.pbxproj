@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11B192E52834F7FC0074B07F /* WDCloudMall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B192E42834F7FC0074B07F /* WDCloudMall.xcframework */; };
-		11B192E62834F7FC0074B07F /* WDCloudMall.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11B192E42834F7FC0074B07F /* WDCloudMall.xcframework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		111662382835261D008EC8BC /* WDCloudMall.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B192E42834F7FC0074B07F /* WDCloudMall.xcframework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -28,20 +27,6 @@
 			remoteInfo = WDCloudMall;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		11B192E72834F7FC0074B07F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11B192E62834F7FC0074B07F /* WDCloudMall.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		07A4DFB6FECB349074DF7F16 /* Pods-WDCloudMall_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WDCloudMall_Example.release.xcconfig"; path = "Target Support Files/Pods-WDCloudMall_Example/Pods-WDCloudMall_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11B192E52834F7FC0074B07F /* WDCloudMall.xcframework in Frameworks */,
+				111662382835261D008EC8BC /* WDCloudMall.xcframework in Frameworks */,
 				B587F694397B0F546F0F280C /* Pods_WDCloudMall_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,7 +175,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				E76B4967E36AB38084FD35E1 /* [CP] Embed Pods Frameworks */,
-				11B192E72834F7FC0074B07F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

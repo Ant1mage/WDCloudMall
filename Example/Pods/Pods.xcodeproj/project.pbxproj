@@ -231,7 +231,7 @@
 		0C129847FA449BC222C056F30D4CB30F /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		0EE76AE756E0894F5FB3102368240AA2 /* CMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMAC.swift; path = Sources/CryptoSwift/CMAC.swift; sourceTree = "<group>"; };
 		0F2E9FB366DCFA4A14495571AC0536E5 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
-		11B192E32834F7E40074B07F /* WDCloudMall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
+		1116623728352607008EC8BC /* WDCloudMall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
 		137A8F151CC5619D4E476601A7AE0686 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		1436147166F26CD26FEFA1AD1CF7C4D1 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
 		154F50B821FC0579C5CA4096682AFE3C /* OCB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCB.swift; path = Sources/CryptoSwift/BlockMode/OCB.swift; sourceTree = "<group>"; };
@@ -731,7 +731,7 @@
 		F9956E0A720A6D7CB3F30B3E60DBF259 /* WDCloudMall */ = {
 			isa = PBXGroup;
 			children = (
-				11B192E32834F7E40074B07F /* WDCloudMall.xcframework */,
+				1116623728352607008EC8BC /* WDCloudMall.xcframework */,
 				CB4FFD0861257CA25F7C7BCAD4A70863 /* Pod */,
 				3401E121EF6895C3233A6F4BF6739201 /* Support Files */,
 			);

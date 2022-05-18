@@ -9,26 +9,25 @@
 /* Begin PBXAggregateTarget section */
 		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = C1DCBDCFCA681D7B0D8B455987BFEA08 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildConfigurationList = 08D0F28EDD61CA01753F98A0825D0332 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
 			buildPhases = (
 			);
 			dependencies = (
 			);
 			name = WechatOpenSDK;
-			productName = WechatOpenSDK;
 		};
 		92D670686DEDF6BA6DAD44F63C4B5E3C /* WDCloudMall */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 63A242CE18566A5F0055D83D62C6A2AC /* Build configuration list for PBXAggregateTarget "WDCloudMall" */;
+			buildConfigurationList = DEC06027B2C21CC3C4B4ED8E52709831 /* Build configuration list for PBXAggregateTarget "WDCloudMall" */;
 			buildPhases = (
+				A5178866F15C7943718625F79FEDA89A /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
-				98A3E1A34567E7FC0945F46424243224 /* PBXTargetDependency */,
-				F688E853E4580AF30B1C47786038E2DC /* PBXTargetDependency */,
-				E9A473792BC028E25057F7BBCFB1339F /* PBXTargetDependency */,
+				5CAA4A089F6B25A1A5B6FBEC42AA5D4A /* PBXTargetDependency */,
+				5E5C21DBAEE5FD56C2BE7686108F0C60 /* PBXTargetDependency */,
+				05CA99B712D59D1104C5677AC553B5D0 /* PBXTargetDependency */,
 			);
 			name = WDCloudMall;
-			productName = WDCloudMall;
 		};
 /* End PBXAggregateTarget section */
 
@@ -161,61 +160,61 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		27B14A3215200F69762CFB5B67FFA2FD /* PBXContainerItemProxy */ = {
+		43206D13576EE42689A35C67814F6306 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
 			remoteInfo = WechatOpenSDK;
 		};
-		51789824A5E00EAB0DDD26A49D25E377 /* PBXContainerItemProxy */ = {
+		4B9C2797F453554972B91F67DBA8B923 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
 		};
-		856850E3E28C5841B0C082E88DFAD952 /* PBXContainerItemProxy */ = {
+		5A65161D89413248F6FB3F242DCC4AC2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99313990C1D76A6D1D017868B6975CC8;
 			remoteInfo = CryptoSwift;
 		};
-		AA858F6E6F9ABFD1BB194C4C4AC567B5 /* PBXContainerItemProxy */ = {
+		5BBF5379494506848F6D853ED24093CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		67468C99422BD03CD638A384559570DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92D670686DEDF6BA6DAD44F63C4B5E3C;
+			remoteInfo = WDCloudMall;
+		};
+		67CC65D6405D8B64F8738BD1D0C004BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99313990C1D76A6D1D017868B6975CC8;
 			remoteInfo = CryptoSwift;
 		};
-		AB29810D432ED7AECE110BA8B0A04E75 /* PBXContainerItemProxy */ = {
+		70D87DAA049AB2AC5C16AD3DFD156BE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A8E6FE8F7260FD85B9708699A5CEDEDC;
 			remoteInfo = "Pods-WDCloudMall_Example";
 		};
-		AE82FAC1C4E4B03D3B0ACB0440A63A9D /* PBXContainerItemProxy */ = {
+		F34EC2073504897102F51B6C6927981C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
 			remoteInfo = SnapKit;
-		};
-		B93DB396BFAC7335EE12F4640209301A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
-			remoteInfo = WechatOpenSDK;
-		};
-		E368530E8CF4B3475BC393315FD93813 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 92D670686DEDF6BA6DAD44F63C4B5E3C;
-			remoteInfo = WDCloudMall;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -231,14 +230,12 @@
 		0C129847FA449BC222C056F30D4CB30F /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		0EE76AE756E0894F5FB3102368240AA2 /* CMAC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CMAC.swift; path = Sources/CryptoSwift/CMAC.swift; sourceTree = "<group>"; };
 		0F2E9FB366DCFA4A14495571AC0536E5 /* AEAD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEAD.swift; path = Sources/CryptoSwift/AEAD/AEAD.swift; sourceTree = "<group>"; };
-		1116623728352607008EC8BC /* WDCloudMall.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
 		137A8F151CC5619D4E476601A7AE0686 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
 		1436147166F26CD26FEFA1AD1CF7C4D1 /* CompactMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompactMap.swift; path = Sources/CryptoSwift/CompactMap.swift; sourceTree = "<group>"; };
 		154F50B821FC0579C5CA4096682AFE3C /* OCB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCB.swift; path = Sources/CryptoSwift/BlockMode/OCB.swift; sourceTree = "<group>"; };
 		156335B87962F44EB62AFFC2D2745809 /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
 		17DD85067878ABDDB0A7C603B9F66F1E /* BlockModeOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockModeOptions.swift; path = Sources/CryptoSwift/BlockMode/BlockModeOptions.swift; sourceTree = "<group>"; };
 		1BB26807F7EDB324F5C90188B04F540A /* Pods-WDCloudMall_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WDCloudMall_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1BE86469547774839BFF9091310CB433 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1C6734E9421E920A6380912E2B02A07C /* SecureBytes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SecureBytes.swift; path = Sources/CryptoSwift/SecureBytes.swift; sourceTree = "<group>"; };
 		1E224DFE98DECD98C29F77B7233FDB85 /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Sources/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
 		1FBFB58815B450A3FFFA45CCB8C05FB3 /* CryptoSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoSwift-dummy.m"; sourceTree = "<group>"; };
@@ -246,8 +243,11 @@
 		20A6874CB92D1868146586D63ACF5F8D /* Cryptors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cryptors.swift; path = Sources/CryptoSwift/Cryptors.swift; sourceTree = "<group>"; };
 		21AFE4D6EEBED3518CC49F9EC1C78E49 /* Pods-WDCloudMall_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDCloudMall_Example.modulemap"; sourceTree = "<group>"; };
 		235425364BEE3A6F682127AEFF29DD2E /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/CryptoSwift/Operators.swift; sourceTree = "<group>"; };
+		237711E4E5B3BBA5617BC9E67F54CADD /* WDCloudMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.debug.xcconfig; sourceTree = "<group>"; };
 		23CFCCF54FF7B13314C60384E67045BE /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		24FB6DB357BE0197A90A52D496D85CDA /* WDCloudMall.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = WDCloudMall.xcframework; sourceTree = "<group>"; };
 		2746B59D8C9FA4D36B58EFC4EC6963BD /* Pods-WDCloudMall_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WDCloudMall_Example-dummy.m"; sourceTree = "<group>"; };
+		27A089B42AC3921406D859EC2E611B32 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		299A75E320EC36AC233A760AB6EC647C /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		29F2C1EFAB4D5AC8E6D4DAC48058BDDF /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AEADChaCha20Poly1305.swift; path = Sources/CryptoSwift/AEAD/AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
 		2D18AB802196D03D6DEFE3970D3FDF83 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
@@ -255,9 +255,9 @@
 		337B2E5FF08D7B88BFA4479BC88D1BBA /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.7.1/WechatAuthSDK.h; sourceTree = "<group>"; };
 		34FC5C2C5E94D7E3FAE5D752AA17BC75 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		370B9A44A42D045AFB0D1093BABC8E6B /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Sources/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		3BF994F10637D37B64493D38F884B835 /* WDCloudMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.release.xcconfig; sourceTree = "<group>"; };
 		3CA9CEED5DADFC2A475530D1EBCB6771 /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Sources/CryptoSwift/Foundation/Data+Extension.swift"; sourceTree = "<group>"; };
 		3E6B7791E5BD8E760723FA1B3E4BAD47 /* Pods-WDCloudMall_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WDCloudMall_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3EC6301333898C70A108D4E6B9703814 /* WDCloudMall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.release.xcconfig; sourceTree = "<group>"; };
 		44319508F43A1011F9589CE74281B490 /* UInt8+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt8+Extension.swift"; path = "Sources/CryptoSwift/UInt8+Extension.swift"; sourceTree = "<group>"; };
 		45395C2B27BACAC04542953BBB26FB67 /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Sources/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
 		46942DE160144B3585AE5152F77B937B /* CryptoSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoSwift-prefix.pch"; sourceTree = "<group>"; };
@@ -266,7 +266,6 @@
 		4AB04A4951B2C6E4BFC67F184F70877B /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
 		51A34143744D3B9A408DE3A9EB1D13B2 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		537FD9CDCA322E281BEEAAE82A379351 /* Array+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Array+Foundation.swift"; sourceTree = "<group>"; };
-		53C45C0D27383A097D6657F3C3F3A485 /* WDCloudMall.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = WDCloudMall.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		54A0178E15EF64CF493FE6036B12B902 /* Utils+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Utils+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Utils+Foundation.swift"; sourceTree = "<group>"; };
 		54BFB52F6F94D64A9A44FAA38AFE1319 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		556669B9C88201381DAEF5686475DD9C /* PBKDF1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PBKDF1.swift; path = Sources/CryptoSwift/PKCS/PBKDF1.swift; sourceTree = "<group>"; };
@@ -286,6 +285,7 @@
 		6D734F1A6ED30E21A225107DE6A3DA3F /* CTR.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CTR.swift; path = Sources/CryptoSwift/BlockMode/CTR.swift; sourceTree = "<group>"; };
 		6DA5724D2E38F60D00433AE4E4CA8AD4 /* Pods-WDCloudMall_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WDCloudMall_Tests.modulemap"; sourceTree = "<group>"; };
 		6F320E34318099548A756D53FFCEC8C3 /* PKCS7.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS7.swift; path = Sources/CryptoSwift/PKCS/PKCS7.swift; sourceTree = "<group>"; };
+		6F68914CCCB6CDFEAAA2440AB9F72B98 /* WDCloudMall-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "WDCloudMall-xcframeworks.sh"; sourceTree = "<group>"; };
 		70AA26E13A1CDCFDC10A88A46E0E485B /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		70E27884D64305950A7FEA11961AE54B /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Sources/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
 		717A63A18EE37B6B2E143778CCFEBFB3 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
@@ -306,13 +306,11 @@
 		8A274EDC8893FDE4023E7F9CF954F298 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		8AB724514123050040A11C32B62BF0AB /* Cipher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cipher.swift; path = Sources/CryptoSwift/Cipher.swift; sourceTree = "<group>"; };
 		8B2319A658C04A60F8701B9C85432829 /* Pods-WDCloudMall_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WDCloudMall_Tests"; path = Pods_WDCloudMall_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BE5B536EEBB5B93C8E9264340C98D0A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		8D67193F12B9B77A23915135CC80F659 /* Pods-WDCloudMall_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WDCloudMall_Example-umbrella.h"; sourceTree = "<group>"; };
 		903E7545471D4AAD1ED03DFF53311131 /* Poly1305.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Poly1305.swift; path = Sources/CryptoSwift/Poly1305.swift; sourceTree = "<group>"; };
 		90C11DFE0E0F4FFE22122C3BADE2F34E /* CryptoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoSwift.debug.xcconfig; sourceTree = "<group>"; };
 		910ADCE28C21CF71C2AF4B3BC0A583E9 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Rabbit+Foundation.swift"; path = "Sources/CryptoSwift/Foundation/Rabbit+Foundation.swift"; sourceTree = "<group>"; };
 		91B7CBD8536DF937FE0FCC6C96153F1D /* Checksum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Checksum.swift; path = Sources/CryptoSwift/Checksum.swift; sourceTree = "<group>"; };
-		91E893B5BF40F20BEFA046F58865B201 /* WDCloudMall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WDCloudMall.debug.xcconfig; sourceTree = "<group>"; };
 		9455162F12CDAC7D3B120AFCAFD9047F /* PKCS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PKCS5.swift; path = Sources/CryptoSwift/PKCS/PKCS5.swift; sourceTree = "<group>"; };
 		957CF4FF1308369896D49267477B3BBB /* SHA2.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA2.swift; path = Sources/CryptoSwift/SHA2.swift; sourceTree = "<group>"; };
 		95DB0374C18FA9046F97A188FC03230F /* NoPadding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NoPadding.swift; path = Sources/CryptoSwift/NoPadding.swift; sourceTree = "<group>"; };
@@ -320,7 +318,7 @@
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97AA7DA25E480B1225A8AB45788DC79A /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
 		99069EB04A42DE2EA0A13BEFE845980B /* String+FoundationExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FoundationExtension.swift"; path = "Sources/CryptoSwift/Foundation/String+FoundationExtension.swift"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EF4F29BEF262EBEA56F84FD77FFF99A /* CryptoSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoSwift.modulemap; sourceTree = "<group>"; };
 		A286B4161B316C6C630D07E580F41AEB /* Rabbit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Rabbit.swift; path = Sources/CryptoSwift/Rabbit.swift; sourceTree = "<group>"; };
 		A3DA5DB5C53D582C227D55DEDEE59F3B /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
@@ -365,6 +363,7 @@
 		E5E16EBB9F03D43A8946EF7C888A4A1C /* OFB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OFB.swift; path = Sources/CryptoSwift/BlockMode/OFB.swift; sourceTree = "<group>"; };
 		E5F259BD0286DF6C252E325DA9E90A47 /* CCM.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CCM.swift; path = Sources/CryptoSwift/BlockMode/CCM.swift; sourceTree = "<group>"; };
 		E6392B620A9B1146AECE4A46442DA904 /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		E8014479853E215F94A105042B98D96C /* WDCloudMall.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = WDCloudMall.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E930F6D88EB2250F3538D575005FB898 /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.8.7.1/WXApiObject.h; sourceTree = "<group>"; };
 		EA6A89D216FC7A6156A61EB4EDAB2161 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
 		EA9535887D76221DFA36A9F903709619 /* Pods-WDCloudMall_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WDCloudMall_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -374,6 +373,7 @@
 		F0DC076DE65FD4C44D701F0D0048F8A0 /* Collection+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Extension.swift"; path = "Sources/CryptoSwift/Collection+Extension.swift"; sourceTree = "<group>"; };
 		F111791DF801CB00B2F6B801F6B22963 /* MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MD5.swift; path = Sources/CryptoSwift/MD5.swift; sourceTree = "<group>"; };
 		F26425871BFA60A293DF535CAD355193 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
+		F3A9F8E74FE1BD1C852CC321B81BC1BC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		F54FFEE7E5BE1EED1567E5232A831803 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		F7A873AD21FAA8E19E0E1E8C1D9937E6 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		F81274EDB681F11E7CB05F7DCA2BB33C /* CryptoSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CryptoSwift; path = CryptoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,6 +428,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/WechatOpenSDK";
+			sourceTree = "<group>";
+		};
+		188DA7063CAC4DC472C4B9E96D8B5933 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B72E078FF8DFE2F73C6D7BF5C56EE311 /* WDCloudMall */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		28FF4C49D42348787CA3FEF13B6E30BA /* CryptoSwift */ = {
@@ -512,17 +520,18 @@
 				FC5C602A0C55C07A6E64DCD6001C6D76 /* ZeroPadding.swift */,
 				D791B6EAECF8B1303EB28AB97A3544DA /* Support Files */,
 			);
+			name = CryptoSwift;
 			path = CryptoSwift;
 			sourceTree = "<group>";
 		};
-		3401E121EF6895C3233A6F4BF6739201 /* Support Files */ = {
+		37B9EA8307B84D482D4CC3E3CE940EFD /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				91E893B5BF40F20BEFA046F58865B201 /* WDCloudMall.debug.xcconfig */,
-				3EC6301333898C70A108D4E6B9703814 /* WDCloudMall.release.xcconfig */,
+				27A089B42AC3921406D859EC2E611B32 /* LICENSE */,
+				F3A9F8E74FE1BD1C852CC321B81BC1BC /* README.md */,
+				E8014479853E215F94A105042B98D96C /* WDCloudMall.podspec */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/WDCloudMall";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		38BD16C07D16680A28727397469D8037 /* Pods-WDCloudMall_Example */ = {
@@ -559,6 +568,17 @@
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		65B69385FFE44565079970F8F40F5749 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F68914CCCB6CDFEAAA2440AB9F72B98 /* WDCloudMall-xcframeworks.sh */,
+				237711E4E5B3BBA5617BC9E67F54CADD /* WDCloudMall.debug.xcconfig */,
+				3BF994F10637D37B64493D38F884B835 /* WDCloudMall.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WDCloudMall";
 			sourceTree = "<group>";
 		};
 		785BF118EBA548791139966D66CBFAC5 /* Pods-WDCloudMall_Tests */ = {
@@ -618,6 +638,7 @@
 				CEB3B4670E59641CEF7DCB3210C91D03 /* UILayoutSupport+Extensions.swift */,
 				8DEEE3EE936A062BCAC7CC569AFE3B94 /* Support Files */,
 			);
+			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -664,7 +685,27 @@
 				B9F2B8F63471F92DEBA0A4A955905909 /* Frameworks */,
 				1249592365850DE7D881C39ED7CF1AFA /* Support Files */,
 			);
+			name = WechatOpenSDK;
 			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		988837470C26E1C50088EDFE594120AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24FB6DB357BE0197A90A52D496D85CDA /* WDCloudMall.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B72E078FF8DFE2F73C6D7BF5C56EE311 /* WDCloudMall */ = {
+			isa = PBXGroup;
+			children = (
+				988837470C26E1C50088EDFE594120AD /* Frameworks */,
+				37B9EA8307B84D482D4CC3E3CE940EFD /* Pod */,
+				65B69385FFE44565079970F8F40F5749 /* Support Files */,
+			);
+			name = WDCloudMall;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		B9F2B8F63471F92DEBA0A4A955905909 /* Frameworks */ = {
@@ -675,21 +716,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB4FFD0861257CA25F7C7BCAD4A70863 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8BE5B536EEBB5B93C8E9264340C98D0A /* LICENSE */,
-				1BE86469547774839BFF9091310CB433 /* README.md */,
-				53C45C0D27383A097D6657F3C3F3A485 /* WDCloudMall.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D45CDE3F4EBA4DB3CAEFBAC05E46B1F9 /* Development Pods */,
+				188DA7063CAC4DC472C4B9E96D8B5933 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				86CE1F25C67D54A63A72B99CB9B73B53 /* Pods */,
 				645361D7E3E72C739006895F860F5DC2 /* Products */,
@@ -705,14 +736,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D45CDE3F4EBA4DB3CAEFBAC05E46B1F9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9956E0A720A6D7CB3F30B3E60DBF259 /* WDCloudMall */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		D791B6EAECF8B1303EB28AB97A3544DA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -726,17 +749,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CryptoSwift";
-			sourceTree = "<group>";
-		};
-		F9956E0A720A6D7CB3F30B3E60DBF259 /* WDCloudMall */ = {
-			isa = PBXGroup;
-			children = (
-				1116623728352607008EC8BC /* WDCloudMall.xcframework */,
-				CB4FFD0861257CA25F7C7BCAD4A70863 /* Pod */,
-				3401E121EF6895C3233A6F4BF6739201 /* Support Files */,
-			);
-			name = WDCloudMall;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -825,10 +837,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				6A01BA013EA89C09665EC75B97893C20 /* PBXTargetDependency */,
-				11EE55C7353B6BF231E9155FF1FAB48E /* PBXTargetDependency */,
-				45D64297F7A0EB3CD0F6D65D0738FF28 /* PBXTargetDependency */,
-				F293E20857610E61D896C6F5D07CFB6F /* PBXTargetDependency */,
+				B9A21BCCF359A58354A8EE509BEE3E74 /* PBXTargetDependency */,
+				E53D979720DCEE80345FEB39ABFADF10 /* PBXTargetDependency */,
+				1035B7B550CD63FA385C58ECEC21DDFE /* PBXTargetDependency */,
+				3E9E43664B5839E736F16E96CED4B38D /* PBXTargetDependency */,
 			);
 			name = "Pods-WDCloudMall_Example";
 			productName = Pods_WDCloudMall_Example;
@@ -847,7 +859,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				FC69066F4AF4C1673312650C14440EC0 /* PBXTargetDependency */,
+				CD6B8FF26B2D819FF7364129D2E04F7E /* PBXTargetDependency */,
 			);
 			name = "Pods-WDCloudMall_Tests";
 			productName = Pods_WDCloudMall_Tests;
@@ -916,6 +928,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5178866F15C7943718625F79FEDA89A /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/WDCloudMall/WDCloudMall-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		06A02EF810C9B8F84BA558BBDB9E5D6E /* Sources */ = {
@@ -1066,71 +1096,57 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		11EE55C7353B6BF231E9155FF1FAB48E /* PBXTargetDependency */ = {
+		05CA99B712D59D1104C5677AC553B5D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = AE82FAC1C4E4B03D3B0ACB0440A63A9D /* PBXContainerItemProxy */;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 43206D13576EE42689A35C67814F6306 /* PBXContainerItemProxy */;
 		};
-		45D64297F7A0EB3CD0F6D65D0738FF28 /* PBXTargetDependency */ = {
+		1035B7B550CD63FA385C58ECEC21DDFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WDCloudMall;
 			target = 92D670686DEDF6BA6DAD44F63C4B5E3C /* WDCloudMall */;
-			targetProxy = E368530E8CF4B3475BC393315FD93813 /* PBXContainerItemProxy */;
+			targetProxy = 67468C99422BD03CD638A384559570DE /* PBXContainerItemProxy */;
 		};
-		6A01BA013EA89C09665EC75B97893C20 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CryptoSwift;
-			target = 99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */;
-			targetProxy = 856850E3E28C5841B0C082E88DFAD952 /* PBXContainerItemProxy */;
-		};
-		98A3E1A34567E7FC0945F46424243224 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CryptoSwift;
-			target = 99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */;
-			targetProxy = AA858F6E6F9ABFD1BB194C4C4AC567B5 /* PBXContainerItemProxy */;
-		};
-		E9A473792BC028E25057F7BBCFB1339F /* PBXTargetDependency */ = {
+		3E9E43664B5839E736F16E96CED4B38D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WechatOpenSDK;
 			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
-			targetProxy = 27B14A3215200F69762CFB5B67FFA2FD /* PBXContainerItemProxy */;
+			targetProxy = 5BBF5379494506848F6D853ED24093CE /* PBXContainerItemProxy */;
 		};
-		F293E20857610E61D896C6F5D07CFB6F /* PBXTargetDependency */ = {
+		5CAA4A089F6B25A1A5B6FBEC42AA5D4A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = WechatOpenSDK;
-			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
-			targetProxy = B93DB396BFAC7335EE12F4640209301A /* PBXContainerItemProxy */;
+			name = CryptoSwift;
+			target = 99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */;
+			targetProxy = 5A65161D89413248F6FB3F242DCC4AC2 /* PBXContainerItemProxy */;
 		};
-		F688E853E4580AF30B1C47786038E2DC /* PBXTargetDependency */ = {
+		5E5C21DBAEE5FD56C2BE7686108F0C60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapKit;
 			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 51789824A5E00EAB0DDD26A49D25E377 /* PBXContainerItemProxy */;
+			targetProxy = F34EC2073504897102F51B6C6927981C /* PBXContainerItemProxy */;
 		};
-		FC69066F4AF4C1673312650C14440EC0 /* PBXTargetDependency */ = {
+		B9A21BCCF359A58354A8EE509BEE3E74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			target = 99313990C1D76A6D1D017868B6975CC8 /* CryptoSwift */;
+			targetProxy = 67CC65D6405D8B64F8738BD1D0C004BC /* PBXContainerItemProxy */;
+		};
+		CD6B8FF26B2D819FF7364129D2E04F7E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-WDCloudMall_Example";
 			target = A8E6FE8F7260FD85B9708699A5CEDEDC /* Pods-WDCloudMall_Example */;
-			targetProxy = AB29810D432ED7AECE110BA8B0A04E75 /* PBXContainerItemProxy */;
+			targetProxy = 70D87DAA049AB2AC5C16AD3DFD156BE3 /* PBXContainerItemProxy */;
+		};
+		E53D979720DCEE80345FEB39ABFADF10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = 4B9C2797F453554972B91F67DBA8B923 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0672FCA7AAF058DC56F7B1E600AB0E4B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6392B620A9B1146AECE4A46442DA904 /* WechatOpenSDK.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		0B89803DE0E30D8928DBDF56F3D05012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0C129847FA449BC222C056F30D4CB30F /* SnapKit.release.xcconfig */;
@@ -1195,6 +1211,36 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2A7EA508C783B354B8A4A7405DC39FF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF994F10637D37B64493D38F884B835 /* WDCloudMall.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35A6A87540DC65334D200F663F9BA20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6392B620A9B1146AECE4A46442DA904 /* WechatOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1295,37 +1341,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		4CDA79CA7D899A82672147498B376D7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EC6301333898C70A108D4E6B9703814 /* WDCloudMall.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		691203BAEF54EA4BE16D4FB32AC6840A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 156335B87962F44EB62AFFC2D2745809 /* WechatOpenSDK.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		6E63385711B7C0DF78B1581316EF78DE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1450,15 +1465,16 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		A4F456A26C38250F287D8B51ECFD5B53 /* Debug */ = {
+		91F06198CEA8773C6773EDA744AD4803 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 91E893B5BF40F20BEFA046F58865B201 /* WDCloudMall.debug.xcconfig */;
+			baseConfigurationReference = 237711E4E5B3BBA5617BC9E67F54CADD /* WDCloudMall.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1572,9 +1588,33 @@
 			};
 			name = Debug;
 		};
+		D704DCC78C7B05602E45D4AAD4F49141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156335B87962F44EB62AFFC2D2745809 /* WechatOpenSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08D0F28EDD61CA01753F98A0825D0332 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A6A87540DC65334D200F663F9BA20E /* Debug */,
+				D704DCC78C7B05602E45D4AAD4F49141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1D8A228996DBC2C7D966D9172843C34A /* Build configuration list for PBXNativeTarget "CryptoSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1602,15 +1642,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63A242CE18566A5F0055D83D62C6A2AC /* Build configuration list for PBXAggregateTarget "WDCloudMall" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A4F456A26C38250F287D8B51ECFD5B53 /* Debug */,
-				4CDA79CA7D899A82672147498B376D7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8EDB8E4DC43E3D88C6FE495C27B9AB8A /* Build configuration list for PBXNativeTarget "Pods-WDCloudMall_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1620,11 +1651,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1DCBDCFCA681D7B0D8B455987BFEA08 /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+		DEC06027B2C21CC3C4B4ED8E52709831 /* Build configuration list for PBXAggregateTarget "WDCloudMall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0672FCA7AAF058DC56F7B1E600AB0E4B /* Debug */,
-				691203BAEF54EA4BE16D4FB32AC6840A /* Release */,
+				91F06198CEA8773C6773EDA744AD4803 /* Debug */,
+				2A7EA508C783B354B8A4A7405DC39FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDCloudMall'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of WDCloudMall.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.author           = { 'zoumin' => 'zoumin@weidian.com' }
   s.source           = { :git => 'https://github.com/SugarAlex/WDCloudMall.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
 
   # s.source_files = 'WDCloudMall/Classes/**/*'
 
@@ -39,6 +39,7 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.vendored_frameworks = 'WDCloudMall.xcframework'
-  s.dependency 'CryptoSwift'
-  s.dependency 'SnapKit'
+  s.dependency 'CryptoSwift', '~> 1.4.2'
+  s.dependency 'SnapKit', '~> 5.0.1'
+  s.dependency 'WechatOpenSDK', '1.8.7.1'
 end

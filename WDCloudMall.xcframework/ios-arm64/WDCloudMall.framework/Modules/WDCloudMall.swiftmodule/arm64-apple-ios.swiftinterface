@@ -12,10 +12,26 @@ import UIKit
 @_exported import WDCloudMall
 import WebKit
 import _Concurrency
-@objc public class WDCMUserModel : ObjectiveC.NSObject {
-  @objc public var userId: Swift.String
-  @objc public init(userId: Swift.String)
-  @objc deinit
+public enum ActiveType {
+  case mention
+  case hashtag
+  case url
+  case email
+  case custom(pattern: Swift.String)
+}
+extension ActiveType : Swift.Hashable, Swift.Equatable {
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public func == (lhs: ActiveType, rhs: ActiveType) -> Swift.Bool
+extension Swift.String {
+  @inlinable internal var isNotEmpty: Swift.Bool {
+    get {
+            return !isEmpty
+        }
+  }
 }
 @objc public protocol WDCMNoticeDelegate : ObjectiveC.NSObjectProtocol {
   @objc func wdcmNoticeLogin(_ view: WDCloudMallContainer)
@@ -33,11 +49,29 @@ extension WDCloudMall {
   @objc dynamic public func createContainer() -> WDCloudMallContainer
 }
 extension WDCloudMall {
-  @objc dynamic public func login(user: WDCMUserModel, complete: @escaping (WDCMResponse) -> ())
-  @objc dynamic public func logout(user: WDCMUserModel, complete: @escaping (WDCMResponse) -> ())
+  @objc dynamic public func login(user: WDCloudMallUserModel, complete: @escaping (WDCMResponse) -> ())
+  @objc dynamic public func logout(user: WDCloudMallUserModel, complete: @escaping (WDCMResponse) -> ())
+}
+@_hasMissingDesignatedInitializers @objc public class WDCMResponse : ObjectiveC.NSObject {
+  @objc public var code: Swift.Int
+  @objc public var message: Swift.String
+  @objc public var data: [Swift.String : Any]
+  @objc public func toString() -> Swift.String
+  @objc public func toMap() -> [Swift.String : Any]
+  @objc deinit
+}
+@objc public class WDCloudMallUserModel : ObjectiveC.NSObject {
+  @objc public var userId: Swift.String
+  @objc public init(userId: Swift.String)
+  @objc deinit
 }
 @objc public class WDCloudMallConfig : ObjectiveC.NSObject {
+  @objc public init(appKey: Swift.String, wxConfig: WDCloudMallWXConfig)
   @objc public init(appKey: Swift.String)
+  @objc deinit
+}
+@objc public class WDCloudMallWXConfig : ObjectiveC.NSObject {
+  @objc public init(appId: Swift.String, universalLink: Swift.String)
   @objc deinit
 }
 @objc public protocol WDCloudMallWebViewSettings {
@@ -52,6 +86,41 @@ extension WDCloudMall {
   @objc func loadRequest(url: Swift.String)
   @objc func reload()
   @objc func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
+}
+@objc public protocol WDCMContainerDelegate {
+  @objc func wdcmContainerWillStartLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidStartLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidFinishLoad(_ view: WDCloudMallContainer)
+  @objc func wdcmContainerDidFailLoadWithError(_ view: WDCloudMallContainer, error: Swift.Error)
+  @objc func wdcmContainerUpdateTitle(_ view: WDCloudMallContainer, title: Swift.String)
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class WDCloudMallContainer : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: WDCMContainerDelegate?
+  @objc deinit
+}
+extension WDCloudMallContainer : WDCloudMallWebViewSettings {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var url: Foundation.URL? {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoBack: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoForward: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var loading: Swift.Bool {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var title: Swift.String {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goBack()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func goForward()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func stopLoading()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func loadRequest(url: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func reload()
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
 }
 public protocol ActiveLabelDelegate : AnyObject {
   func didSelect(_ text: Swift.String, type: ActiveType)
@@ -166,60 +235,3 @@ extension ActiveLabel : UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRequireFailureOf otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc dynamic public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
 }
-@objc public protocol WDCMContainerDelegate {
-  @objc func wdcmContainerWillStartLoad(_ view: WDCloudMallContainer)
-  @objc func wdcmContainerDidStartLoad(_ view: WDCloudMallContainer)
-  @objc func wdcmContainerDidFinishLoad(_ view: WDCloudMallContainer)
-  @objc func wdcmContainerDidFailLoadWithError(_ view: WDCloudMallContainer, error: Swift.Error)
-  @objc func wdcmContainerUpdateTitle(_ view: WDCloudMallContainer, title: Swift.String)
-}
-@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class WDCloudMallContainer : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: WDCMContainerDelegate?
-  @objc deinit
-}
-extension WDCloudMallContainer : WDCloudMallWebViewSettings {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public var url: Foundation.URL? {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoBack: Swift.Bool {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public var canGoForward: Swift.Bool {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public var loading: Swift.Bool {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public var title: Swift.String {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func goBack()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func goForward()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func stopLoading()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func loadRequest(url: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func reload()
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func callJS(data: [Swift.String : Any], complete: @escaping ([Swift.AnyHashable : Any]?, Swift.Error?) -> Swift.Void)
-}
-@_hasMissingDesignatedInitializers @objc public class WDCMResponse : ObjectiveC.NSObject {
-  @objc public var code: Swift.Int
-  @objc public var message: Swift.String
-  @objc public var data: [Swift.String : Any]
-  @objc public func toString() -> Swift.String
-  @objc public func toMap() -> [Swift.String : Any]
-  @objc deinit
-}
-public enum ActiveType {
-  case mention
-  case hashtag
-  case url
-  case email
-  case custom(pattern: Swift.String)
-}
-extension ActiveType : Swift.Hashable, Swift.Equatable {
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public func == (lhs: ActiveType, rhs: ActiveType) -> Swift.Bool

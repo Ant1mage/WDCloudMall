@@ -273,6 +273,7 @@ SWIFT_CLASS("_TtC11WDCloudMall11ActiveLabel")
 
 
 
+
 @class WDCloudMallContainer;
 
 SWIFT_PROTOCOL("_TtP11WDCloudMall21WDCMContainerDelegate_")
@@ -307,15 +308,6 @@ SWIFT_CLASS("_TtC11WDCloudMall12WDCMResponse")
 @end
 
 
-SWIFT_CLASS("_TtC11WDCloudMall13WDCMUserModel")
-@interface WDCMUserModel : NSObject
-@property (nonatomic, copy) NSString * _Nonnull userId;
-- (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
 SWIFT_CLASS("_TtC11WDCloudMall11WDCloudMall")
 @interface WDCloudMall : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WDCloudMall * _Nonnull shared;)
@@ -325,10 +317,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WDCloudMall 
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class WDCloudMallUserModel;
 
 @interface WDCloudMall (SWIFT_EXTENSION(WDCloudMall))
-- (void)loginWithUser:(WDCMUserModel * _Nonnull)user complete:(void (^ _Nonnull)(WDCMResponse * _Nonnull))complete;
-- (void)logoutWithUser:(WDCMUserModel * _Nonnull)user complete:(void (^ _Nonnull)(WDCMResponse * _Nonnull))complete;
+- (void)loginWithUser:(WDCloudMallUserModel * _Nonnull)user complete:(void (^ _Nonnull)(WDCMResponse * _Nonnull))complete;
+- (void)logoutWithUser:(WDCloudMallUserModel * _Nonnull)user complete:(void (^ _Nonnull)(WDCMResponse * _Nonnull))complete;
 @end
 
 @class WDCloudMallConfig;
@@ -338,13 +331,16 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) WDCloudMall 
 - (WDCloudMallContainer * _Nonnull)createContainer SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class WDCloudMallWXConfig;
 
 SWIFT_CLASS("_TtC11WDCloudMall17WDCloudMallConfig")
 @interface WDCloudMallConfig : NSObject
+- (nonnull instancetype)initWithAppKey:(NSString * _Nonnull)appKey wxConfig:(WDCloudMallWXConfig * _Nonnull)wxConfig OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithAppKey:(NSString * _Nonnull)appKey OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
 
 
 SWIFT_CLASS("_TtC11WDCloudMall20WDCloudMallContainer")
@@ -389,6 +385,23 @@ SWIFT_PROTOCOL("_TtP11WDCloudMall26WDCloudMallWebViewSettings_")
 - (void)loadRequestWithUrl:(NSString * _Nonnull)url;
 - (void)reload;
 - (void)callJSWithData:(NSDictionary<NSString *, id> * _Nonnull)data complete:(void (^ _Nonnull)(NSDictionary * _Nullable, NSError * _Nullable))complete;
+@end
+
+
+SWIFT_CLASS("_TtC11WDCloudMall20WDCloudMallUserModel")
+@interface WDCloudMallUserModel : NSObject
+@property (nonatomic, copy) NSString * _Nonnull userId;
+- (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11WDCloudMall19WDCloudMallWXConfig")
+@interface WDCloudMallWXConfig : NSObject
+- (nonnull instancetype)initWithAppId:(NSString * _Nonnull)appId universalLink:(NSString * _Nonnull)universalLink OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 

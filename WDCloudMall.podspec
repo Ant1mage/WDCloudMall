@@ -41,5 +41,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'WDCloudMall.xcframework'
   s.dependency 'CryptoSwift', '~> 1.4.2'
   s.dependency 'SnapKit', '~> 5.0.1'
-  s.dependency 'WechatOpenSDK', '~> 1.9'
+  s.dependency 'WechatOpenSDK', '~> 1.8.7.1'
 end

@@ -8,19 +8,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDCloudMall'
-  s.version          = '1.0.3'
+  s.version          = '1.0.5'
   s.summary          = 'A short description of WDCloudMall.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = 'WDCloudMall Pod'
-
   s.homepage         = 'https://github.com/SugarAlex/WDCloudMall'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'zoumin' => 'zoumin@weidian.com' }
   s.source           = { :git => 'https://github.com/SugarAlex/WDCloudMall.git', :tag => s.version.to_s }
@@ -41,5 +32,4 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'WDCloudMall.xcframework'
   s.dependency 'CryptoSwift', '~> 1.4.2'
   s.dependency 'SnapKit', '~> 5.0.1'
-  s.dependency 'WechatOpenSDK', '~> 1.9.2'
 end

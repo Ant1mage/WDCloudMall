@@ -6,6 +6,6 @@ framework module WDCloudMall {
 }
 
 module WDCloudMall.Swift {
-    header "WDCloudMall-Swift.h"
-    requires objc
+  header "WDCloudMall-Swift.h"
+  requires objc
 }

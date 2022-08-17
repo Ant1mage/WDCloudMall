@@ -1,11 +1,13 @@
 PODS:
   - CryptoSwift (1.4.3)
   - SnapKit (5.0.1)
-  - WDCloudMall (1.0.3):
+  - WDCloudMall (1.0.5):
     - CryptoSwift (~> 1.4.2)
     - SnapKit (~> 5.0.1)
 
 DEPENDENCIES:
+  - CryptoSwift (~> 1.4.2)
+  - SnapKit (~> 5.0.1)
   - WDCloudMall (from `../`)
 
 SPEC REPOS:
@@ -20,8 +22,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   CryptoSwift: a0799ee936271bd2253a006f1e4523df21845000
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  WDCloudMall: e1ba1706ceec81450467361d9a92f575959912f2
+  WDCloudMall: 075c4b65d1b7080af97a368c0df97e7cfdd3df9e
 
-PODFILE CHECKSUM: 9601125fd4f7caa6f13b0d453aeab71efdfc132a
+PODFILE CHECKSUM: 1340976460f1f16e46f2c023803de2486725a3e8
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

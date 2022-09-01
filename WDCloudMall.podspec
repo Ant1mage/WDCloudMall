@@ -18,18 +18,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  # s.source_files = 'WDCloudMall/Classes/**/*'
-
   s.xcconfig = { 'EXCLUDED_ARCHS' => 'armv7' }
-  # s.attributes_hash['extended'] ||= {'cocoapods-binary-source-swithcer' => '~> 1.0.0', "is_xcframework" => "true"}
-  
-  # s.resource_bundles = {
-  #   'WDCloudMall' => ['WDCloudMall/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.vendored_frameworks = 'WDCloudMall.xcframework'
   s.dependency 'CryptoSwift', '~> 1.4.2'
   s.dependency 'SnapKit', '~> 5.0.1'
+  s.dependency 'WechatOpenSDK', '1.8.7.1'
 end

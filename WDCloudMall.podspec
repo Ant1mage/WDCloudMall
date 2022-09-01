@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDCloudMall'
-  s.version          = '1.0.5'
+  s.version          = '1.0.5.1'
   s.summary          = 'A short description of WDCloudMall.'
   s.description      = 'WDCloudMall Pod'
   s.homepage         = 'https://github.com/SugarAlex/WDCloudMall'

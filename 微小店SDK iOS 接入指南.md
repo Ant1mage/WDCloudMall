@@ -8,6 +8,12 @@ iOS端 SDK 采用 Swift 语言编写, 相比于 Objective-C 拥有更快的启�
 
 &nbsp;
 
+## 1.0.5.1版本更新
+
+1. **暂时退回Xcode13打包, 微信SDK降低到 1.8.7.1**
+
+&nbsp;
+
 ## 1.0.5版本更新
 
 1. **WechatOpenSDK** 升级为 **1.9.6.2**

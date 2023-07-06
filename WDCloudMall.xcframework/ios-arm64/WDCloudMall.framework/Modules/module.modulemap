@@ -1,11 +1,11 @@
 framework module WDCloudMall {
-  umbrella header "WDCloudMall.h"
+  umbrella header "WDCloudMall-umbrella.h"
 
   export *
   module * { export * }
 }
 
 module WDCloudMall.Swift {
-    header "WDCloudMall-Swift.h"
-    requires objc
+  header "WDCloudMall-Swift.h"
+  requires objc
 }

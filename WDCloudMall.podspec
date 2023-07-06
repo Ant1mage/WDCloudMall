@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WDCloudMall'
-  s.version          = '1.0.5.1'
+  s.version          = '1.1.0'
   s.summary          = 'A short description of WDCloudMall.'
   s.description      = 'WDCloudMall Pod'
   s.homepage         = 'https://github.com/SugarAlex/WDCloudMall'
@@ -18,9 +18,11 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '11.0'
 
-  s.xcconfig = { 'EXCLUDED_ARCHS' => 'armv7' }
+  s.swift_versions = ['5.3', '5.4', '5.5', '5.6', '5.7', '5.8']
+
   s.vendored_frameworks = 'WDCloudMall.xcframework'
-  s.dependency 'CryptoSwift', '~> 1.4.2'
-  s.dependency 'SnapKit', '~> 5.0.1'
-  s.dependency 'WechatOpenSDK', '1.8.7.1'
+
+  s.dependency 'CryptoSwift'
+  s.dependency 'Masonry'
+	s.dependency 'WechatOpenSDK'
 end

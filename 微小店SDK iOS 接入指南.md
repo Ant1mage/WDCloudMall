@@ -8,6 +8,13 @@ iOS端 SDK 采用 Swift 语言编写, 相比于 Objective-C 拥有更快的启�
 
 &nbsp;
 
+## 1.1.0版本更新
+
+1. **去掉 Snapkit, 使用 Masonry**
+2. **podspec 去掉强制版本号, 接入方 podfile 自行指定**
+3. **Swift 5.7更新, 最低支持 5.3, 打开 build_library_for_distribution**
+4. **Xcode14 打包**
+
 ## 1.0.5.1版本更新
 
 1. **暂时退回Xcode13打包, 微信SDK降低到 1.8.7.1**
